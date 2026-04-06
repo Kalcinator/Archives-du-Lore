@@ -5,8 +5,6 @@
 
 Les Archives du Lore sont une ressource communautaire pour retrouver facilement les créateurs francophones qui parlent du lore Warhammer 40k 30k (et un peu de TC). Chaînes YouTube, podcasts, livres audio; tout ce que j'ai pu trouver est là !
 
-Rendez-vous sur https://kalcinator.github.io/Archives-du-Lore/
-
 Utilisez la barre de recherche pour filtrer par nom, tag ("livre audio", "podcast"), ou statut ("actif", "pause").
 
 Si vous connaissez une chaîne qui manque ? Ouvrez une issue, une pull request ou un [message sur Discord](https://discord.com/users/380084649868918784) avec l'entrée à ajouter
