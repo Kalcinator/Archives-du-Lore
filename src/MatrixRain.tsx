@@ -50,17 +50,22 @@ export default function MatrixRain() {
       });
     };
 
-    // ralentir : 1 frame sur 3
-    let tick = 0;
-    const throttledDraw = () => {
-      tick++;
-      if (tick % 28 === 0) draw();
-      animId = requestAnimationFrame(throttledDraw);
+    let lastTime = 0;
+    const interval = 1000 / 15; // 15 FPS
+
+    const animate = (timestamp: number) => {
+      const deltaTime = timestamp - lastTime;
+
+      if (deltaTime > interval) {
+        lastTime = timestamp - (deltaTime % interval);
+        draw();
+      }
+      animId = requestAnimationFrame(animate);
     };
 
     init();
     window.addEventListener("resize", init);
-    animId = requestAnimationFrame(throttledDraw);
+    animId = requestAnimationFrame(animate);
 
     return () => {
       cancelAnimationFrame(animId);

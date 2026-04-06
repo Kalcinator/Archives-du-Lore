@@ -15,25 +15,35 @@ interface Particle {
 const GLYPHS = "01".split("");
 
 /**
+ * Réinitialise une particule existante (Object Pooling).
+ * @param p La particule à réinitialiser
+ * @param w Largeur du canvas
+ * @param h Hauteur du canvas
+ */
+function resetParticle(p: Particle, w: number, h: number) {
+  const angle = Math.random() * Math.PI * 2;
+  const dist = Math.random() * 40;
+  const cx = w / 2;
+  const cy = h / 2;
+  p.x = cx + Math.cos(angle) * dist;
+  p.y = cy + Math.sin(angle) * dist;
+  p.size = 4 + Math.random() * 2;
+  p.speed = 0.4 + Math.random() * 0.4;
+  p.opacity = 0.6 + Math.random() * 0.02;
+  p.glyph = GLYPHS[Math.floor(Math.random() * GLYPHS.length)];
+  p.angle = angle;
+}
+
+/**
  * Crée une nouvelle particule au centre du canvas.
  * @param w Largeur du canvas
  * @param h Hauteur du canvas
  * @returns Une instance de Particle initialisée
  */
 function createParticle(w: number, h: number): Particle {
-  const angle = Math.random() * Math.PI * 2;
-  const dist = Math.random() * 40;
-  const cx = w / 2;
-  const cy = h / 2;
-  return {
-    x: cx + Math.cos(angle) * dist,
-    y: cy + Math.sin(angle) * dist,
-    size: 4 + Math.random() * 2,
-    speed: 0.4 + Math.random() * 0.4,
-    opacity: 0.6 + Math.random() * 0.02,
-    glyph: GLYPHS[Math.floor(Math.random() * GLYPHS.length)],
-    angle,
-  };
+  const p = {} as Particle;
+  resetParticle(p, w, h);
+  return p;
 }
 
 /**
@@ -69,7 +79,7 @@ export default function NoosPulse() {
     const draw = () => {
       ctx.clearRect(0, 0, canvas.width, canvas.height);
 
-      particles = particles.map((p) => {
+      particles.forEach((p) => {
         const maxDist = Math.max(canvas.width, canvas.height) * 0.55;
         const cx = canvas.width / 2;
         const cy = canvas.height / 2;
@@ -77,9 +87,10 @@ export default function NoosPulse() {
         const progress = currentDist / maxDist;
 
         // fade in puis fade out vers la périphérie
-        const opacity = progress < 0.3
-          ? p.opacity * (progress / 0.3)
-          : p.opacity * (1 - (progress - 0.3) / 0.7);
+        const opacity =
+          progress < 0.3
+            ? p.opacity * (progress / 0.3)
+            : p.opacity * (1 - (progress - 0.3) / 0.7);
 
         ctx.font = `${p.size}px monospace`;
         ctx.fillStyle = `rgba(184, 134, 11, ${Math.max(0, opacity * 0.5)})`;
@@ -90,10 +101,12 @@ export default function NoosPulse() {
         const ny = cy + Math.sin(p.angle) * (currentDist + p.speed);
 
         if (progress >= 1) {
-          return createParticle(canvas.width, canvas.height);
+          resetParticle(p, canvas.width, canvas.height);
+        } else {
+          p.x = nx;
+          p.y = ny;
+          p.size = newSize;
         }
-
-        return { ...p, x: nx, y: ny, size: newSize };
       });
 
       animId = requestAnimationFrame(draw);
