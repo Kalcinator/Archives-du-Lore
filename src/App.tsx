@@ -18,7 +18,7 @@ const CHANNELS: Channel[] = [
   { name: "Alphanime TV", url: "https://www.youtube.com/@alphanimetv", description: "" },
   { name: "Auguste Val", url: "https://www.youtube.com/@augusteval", description: "" },
   { name: "Ben le dingue", url: "https://www.youtube.com/@Ben_le_dingue", description: "lore 40k mais parodique/marrante" },
-  { name: "Bibliothèque Imperialis", url: "https://www.youtube.com/@BibliothèqueImperialis", description: "nouvelle chaine super" },
+  { name: "Bibliothèque Imperialis", url: "https://www.youtube.com/@Biblioth%C3%A8queImperialis", description: "nouvelle chaine super" },
   { name: "BoneSinger", url: "https://www.youtube.com/@BoneSinger", description: "" },
   { name: "BrushClub", url: "https://www.youtube.com/@brushclubfr", description: "" },
   { name: "Collegia Historium", url: "https://www.youtube.com/@CollegiaHistorium", description: "pas que du 40k" },
