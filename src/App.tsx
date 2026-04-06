@@ -531,7 +531,7 @@ export default function App() {
               rel="noopener noreferrer"
               className="underline underline-offset-2 hover:text-brass transition-colors"
             >
-              ouvrir une issue GitHub
+              m'en informer sur GitHub
             </a>{" "}
             ou{" "}
             <a
@@ -540,7 +540,7 @@ export default function App() {
               rel="noopener noreferrer"
               className="underline underline-offset-2 hover:text-brass transition-colors"
             >
-              m'envoyer un message Discord
+              m'envoyer un message via Discord
             </a>
           </p>
           <p className="text-xl uppercase tracking-widest text-parchment-muted/40 font-sans mt-6">
