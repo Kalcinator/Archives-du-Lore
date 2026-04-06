@@ -15,9 +15,6 @@ Utilisez la barre de recherche pour filtrer par nom, tag ("livre audio", "podcas
 
 Si vous connaissez une chaîne qui manque ? Ouvrez une issue, une pull request ou un message sur Discord avec l'entrée à ajouter 
 
----
-
-## Licence
-
 Ce projet est sous licence **CC0 1.0 Universal** — domaine public, aucune restriction.  
-Fais-en ce que tu veux. L'Empereur Protège.
+
+L'Empereur Protège.
