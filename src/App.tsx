@@ -116,7 +116,7 @@ const CHANNELS: Channel[] = [
     name: "Frewind",
     url: "https://www.youtube.com/@frewind8260",
     description: "Lore narratif 40k, Age of Sigmar et Old World.",
-    status: "active",
+    status: "pause",
     tags: ["lore"],
   },
   {
