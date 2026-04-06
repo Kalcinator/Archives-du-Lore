@@ -4,7 +4,7 @@ import path from 'path';
 import {defineConfig} from 'vite';
 
 export default defineConfig({
-  base: '/archives-du-lore/',
+  base: '/Archives-du-Lore/',
   plugins: [react(), tailwindcss()],
   resolve: {
     alias: {
