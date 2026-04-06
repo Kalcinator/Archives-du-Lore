@@ -11,6 +11,8 @@ import {
   ExternalLink,
   BookOpen,
 } from "lucide-react";
+import MatrixRain from "./MatrixRain";
+import NoosPulse from "./NoosPulse";
 
 interface Channel {
   name: string;
@@ -327,26 +329,37 @@ const itemVariants = {
 export default function App() {
   const [searchQuery, setSearchQuery] = useState("");
 
-  const filteredChannels = CHANNELS.filter(
-    (channel) =>
-      channel.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
-      channel.description.toLowerCase().includes(searchQuery.toLowerCase()) ||
-      channel.tags.some((tag) => tag.includes(searchQuery.toLowerCase())),
-  );
+  const statusFR: Record<string, string> = {
+    active: "actif",
+    pause: "pause",
+    dead: "inactif",
+  };
+
+  const filteredChannels = CHANNELS.filter((channel) => {
+    const q = searchQuery.toLowerCase();
+    return (
+      channel.name.toLowerCase().includes(q) ||
+      channel.description.toLowerCase().includes(q) ||
+      statusFR[channel.status].includes(q) ||
+      channel.tags.some((tag) => tag.replace(/-/g, " ").includes(q))
+    );
+  });
 
   return (
     <div className="min-h-screen relative overflow-x-hidden selection:bg-blood-red selection:text-white">
+      <MatrixRain />
+      <NoosPulse />
       <div className="scanlines"></div>
       <div className="vignette"></div>
 
       <main className="relative z-10 max-w-5xl mx-auto px-6 py-16 md:py-24">
         {/* Header Section */}
-        <header className="mb-16 text-center">
+        <header className="mb-4 text-center">
           <motion.div
             initial={{ opacity: 0, scale: 0.9 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.8, ease: "easeOut" }}
-            className="flex justify-center mb-6"
+            className="flex justify-center mb-4"
           >
             <Skull
               className="w-16 h-16 text-brass text-glow"
@@ -358,7 +371,7 @@ export default function App() {
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
-            className="font-display text-4xl md:text-6xl lg:text-7xl font-bold tracking-tighter uppercase mb-6 text-parchment text-glow"
+            className="font-display text-4xl md:text-6xl lg:text-7xl font-bold tracking-tighter uppercase mb-4 text-parchment text-glow"
           >
             Archives du{" "}
             <span className="text-blood-red text-glow-red">Lore</span>
@@ -383,7 +396,7 @@ export default function App() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.6 }}
-          className="mb-12 relative max-w-md mx-auto"
+          className="mb-4 relative max-w-md mx-auto"
         >
           <div className="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none">
             <Search className="h-5 w-5 text-parchment-muted" />
@@ -440,7 +453,7 @@ export default function App() {
                       <div className="flex flex-wrap gap-1 mt-3">
                         {channel.tags.map((tag) => (
                           <span key={tag} className="text-xs uppercase tracking-wider px-2 py-0.5 border border-grim-border text-parchment-muted/60 font-sans">
-                            {tag}
+                            {tag.replace(/-/g, " ")}
                           </span>
                         ))}
                       </div>
