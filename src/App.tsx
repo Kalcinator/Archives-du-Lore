@@ -5,12 +5,7 @@
 
 import { useState } from "react";
 import { motion } from "motion/react";
-import {
-  Search,
-  Skull,
-  ExternalLink,
-  BookOpen,
-} from "lucide-react";
+import { Search, Skull, ExternalLink, BookOpen } from "lucide-react";
 import MatrixRain from "./MatrixRain";
 import NoosPulse from "./NoosPulse";
 
@@ -22,7 +17,15 @@ interface Channel {
   tags: Tag[];
 }
 
-type Tag = "lore" |"podcast" | "livre-audio" | "livre-audio-original" | "musique" | "figurines" | "news" | "jeux-video";
+type Tag =
+  | "lore"
+  | "podcast"
+  | "livre-audio"
+  | "livre-audio-original"
+  | "musique"
+  | "figurines"
+  | "news"
+  | "jeux-video";
 
 const CHANNELS: Channel[] = [
   {
@@ -35,28 +38,32 @@ const CHANNELS: Channel[] = [
   {
     name: "Alphanime TV",
     url: "https://www.youtube.com/@alphanimetv",
-    description: "Romans audios originaux et de fan fictions. Vous y trouverez également quelques parodies et d'autres trucs.",
+    description:
+      "Romans audios originaux et de fan fictions. Vous y trouverez également quelques parodies et d'autres trucs.",
     status: "active",
     tags: ["livre-audio-original"],
   },
   {
     name: "Auguste Val",
     url: "https://www.youtube.com/@augusteval",
-    description: "Vidéos de fluff sur l'univers de Warhammer 40 000 tous les semaines",
+    description:
+      "Vidéos de fluff sur l'univers de Warhammer 40 000 tous les semaines",
     status: "active",
     tags: ["lore"],
   },
   {
     name: "Ben le dingue",
     url: "https://www.youtube.com/@Ben_le_dingue",
-    description: "Pignouf random n°343, nous arrivons en gare, attention sur votre gauche vous trouverez des vidéo JV. La marche à la sortie du train est plus humoristique que narrativo-dépressive",
+    description:
+      "Pignouf random n°343, nous arrivons en gare, attention sur votre gauche vous trouverez des vidéo JV. La marche à la sortie du train est plus humoristique que narrativo-dépressive",
     status: "active",
     tags: ["lore", "jeux-video"],
   },
   {
     name: "Bibliothèque Imperialis",
     url: "https://www.youtube.com/@Biblioth%C3%A8queImperialis",
-    description: "Récits épiques et immersifs. Batailles légendaires, histoires inédites, personnages oubliés de l'Histoire",
+    description:
+      "Récits épiques et immersifs. Batailles légendaires, histoires inédites, personnages oubliés de l'Histoire",
     status: "active",
     tags: ["lore"],
   },
@@ -84,7 +91,8 @@ const CHANNELS: Channel[] = [
   {
     name: "Commémorateurs 40K",
     url: "https://www.youtube.com/@Commemorateurs40K",
-    description: " Zenk et Ash, commémorateurs impériaux, chargés de préserver la mémoire des événements marquants et tragiques qui ont façonné la galaxie. À travers récits et archives, nous retraçons des rencontres titanesques, des sacrifices héroïques et des sombres trahisons qui ont défini les dix derniers millénaires. ",
+    description:
+      " Zenk et Ash, commémorateurs impériaux, chargés de préserver la mémoire des événements marquants et tragiques qui ont façonné la galaxie. À travers récits et archives, nous retraçons des rencontres titanesques, des sacrifices héroïques et des sombres trahisons qui ont défini les dix derniers millénaires. ",
     status: "pause",
     tags: ["lore"],
   },
@@ -95,16 +103,19 @@ const CHANNELS: Channel[] = [
     status: "pause",
     tags: ["lore", "podcast", "figurines"],
   },
-  { name: "D&A", 
-    url: "https://www.youtube.com/@PapaDjoe", 
-    description: "Narration sur divers Lore : Warhammer 40k, Warhammer Battle, Age of Sigmar, Necromunda, AOS",
+  {
+    name: "D&A",
+    url: "https://www.youtube.com/@PapaDjoe",
+    description:
+      "Narration sur divers Lore : Warhammer 40k, Warhammer Battle, Age of Sigmar, Necromunda, AOS",
     status: "pause",
     tags: ["lore"],
   },
   {
     name: "Gautres",
     url: "https://www.youtube.com/@FreezEToxiik",
-    description: "Narration sur divers lore, rediffusion lives, absent depuis + de deux ans",
+    description:
+      "Narration sur divers lore, rediffusion lives, absent depuis + de deux ans",
     status: "dead",
     tags: ["lore"],
   },
@@ -118,56 +129,64 @@ const CHANNELS: Channel[] = [
   {
     name: "Indomitus 40k",
     url: "https://www.youtube.com/@indomitus_40k",
-    description: "chaîne destinée à faire découvrir le Lore de Warhammer 40k, lore narratif",
+    description:
+      "chaîne destinée à faire découvrir le Lore de Warhammer 40k, lore narratif",
     status: "active",
     tags: ["lore"],
   },
   {
     name: "L'Archiviste",
     url: "https://www.youtube.com/@larchivistedesmondes",
-    description: "Récits épiques et immersifs, où l'histoire et la fiction se rencontrent. De l'univers impitoyable de Warhammer 40K aux intrigues secrètes des grandes époques historiques. En pause IRL",
+    description:
+      "Récits épiques et immersifs, où l'histoire et la fiction se rencontrent. De l'univers impitoyable de Warhammer 40K aux intrigues secrètes des grandes époques historiques. En pause IRL",
     status: "pause",
     tags: ["lore"],
   },
   {
     name: "L'apprenti Trouvère",
     url: "https://www.youtube.com/@ApprentiTrouvere-40k",
-    description: "Apprenti conteur et écrivain en autodidacte, livres audio par chapitre",
+    description:
+      "Apprenti conteur et écrivain en autodidacte, livres audio par chapitre",
     status: "pause",
     tags: ["livre-audio", "livre-audio-original"],
   },
   {
     name: "La grotte ou il pleut",
     url: "https://www.youtube.com/@tomwolf92",
-    description: "Chaque vidéo est pensée comme une pause : un moment pour s’évader, vibrer, frissonner ou simplement s’asseoir et ressentir. Que tu sois fan du Grimdark, joueur passionné ou amateur d’histoires, cette chaîne est ton refuge.",
+    description:
+      "Chaque vidéo est pensée comme une pause : un moment pour s’évader, vibrer, frissonner ou simplement s’asseoir et ressentir. Que tu sois fan du Grimdark, joueur passionné ou amateur d’histoires, cette chaîne est ton refuge.",
     status: "pause",
     tags: ["lore"],
   },
   {
     name: "Land Rider - Un Podcast Warhammer",
     url: "https://www.youtube.com/@LandRiderPod",
-    description: "Le podcast qui vous parle avec amour des univers où il n'y a que la guerre : ceux de Warhammer (et Trench Crusade) ! Lore, figurines, jeu, et l'interaction entre les trois.",
+    description:
+      "Le podcast qui vous parle avec amour des univers où il n'y a que la guerre : ceux de Warhammer (et Trench Crusade) ! Lore, figurines, jeu, et l'interaction entre les trois.",
     status: "active",
     tags: ["podcast", "lore", "figurines"],
   },
   {
     name: "Le Librarium",
     url: "https://www.youtube.com/@LeLibrarium",
-    description: "Lore narratif. Laissez vous entrainer par ses vidéos traitant principalement du Lore & des différents contenus de cette incroyable licence",
+    description:
+      "Lore narratif. Laissez vous entrainer par ses vidéos traitant principalement du Lore & des différents contenus de cette incroyable licence",
     status: "active",
     tags: ["lore"],
   },
   {
     name: "Le Primarch Roux",
     url: "https://www.youtube.com/@leprimarchroux",
-    description: "Loriste 40k, créatif grimdark avec trop d'idées et pas assez de temps.",
+    description:
+      "Loriste 40k, créatif grimdark avec trop d'idées et pas assez de temps.",
     status: "active",
     tags: ["lore"],
   },
   {
     name: "Le divan du Cryptek",
     url: "https://www.youtube.com/@divancryptek",
-    description: "Lore narratif et analyse des personnages et des factions sous le prisme de la psychologie, review des romans.",
+    description:
+      "Lore narratif et analyse des personnages et des factions sous le prisme de la psychologie, review des romans.",
     status: "active",
     tags: ["lore"],
   },
@@ -181,14 +200,15 @@ const CHANNELS: Channel[] = [
   {
     name: "Legio Relica",
     url: "https://www.youtube.com/@LegioRelica",
-    description: "Warhammer 30,000 et 40,000. Lore comme jeu de plateau dans des formats de 10 à 15 minutes.",
+    description:
+      "Warhammer 30,000 et 40,000. Lore comme jeu de plateau dans des formats de 10 à 15 minutes.",
     status: "pause",
     tags: ["lore", "figurines"],
   },
   {
     name: "Legio Symphonica",
     url: "https://www.youtube.com/@LegioSymphonica",
-    description:"Excellent projet musical Grim Dark !",
+    description: "Excellent projet musical Grim Dark !",
     status: "active",
     tags: ["musique"],
   },
@@ -216,7 +236,8 @@ const CHANNELS: Channel[] = [
   {
     name: "Nimp 30k",
     url: "https://www.youtube.com/@Nimp30k",
-    description: "Hérésie d'Horus à travers du Lore ou des Rapports de bataille.",
+    description:
+      "Hérésie d'Horus à travers du Lore ou des Rapports de bataille.",
     status: "active",
     tags: ["lore", "figurines"],
   },
@@ -230,12 +251,16 @@ const CHANNELS: Channel[] = [
   {
     name: "Nono le nurgling",
     url: "https://www.youtube.com/@Nonolenurgling",
-    description: "Un nurgling échappé du Warp, lore et news 40k. Possibilité de contamination humoristique via vidéo ⚠️🤢",
+    description:
+      "Un nurgling échappé du Warp, lore et news 40k. Possibilité de contamination humoristique via vidéo ⚠️🤢",
     status: "active",
     tags: ["lore", "news"],
   },
-  { name: "Oxawa", url: "https://www.youtube.com/@oxawa", 
-    description: "Lore, narration et immersion; format historique exhaustif, de l'âge d'or de l'humanité à l'âge sombre de l'Imperium",
+  {
+    name: "Oxawa",
+    url: "https://www.youtube.com/@oxawa",
+    description:
+      "Lore, narration et immersion; format historique exhaustif, de l'âge d'or de l'humanité à l'âge sombre de l'Imperium",
     status: "active",
     tags: ["lore"],
   },
@@ -249,21 +274,24 @@ const CHANNELS: Channel[] = [
   {
     name: "RURAL HAMMER",
     url: "https://www.youtube.com/@RURALHAMMER",
-    description:"La chaîne du Wargame à l'ancienne et du Warhammer bien de chez nous",
+    description:
+      "La chaîne du Wargame à l'ancienne et du Warhammer bien de chez nous",
     status: "active",
     tags: ["lore", "figurines", "podcast", "news"],
   },
   {
     name: "Sanko_Lore",
     url: "https://www.youtube.com/@Sanko_Lore",
-    description: "Un fan de Lore qui partage sa passion. Plusieurs séries originales",
+    description:
+      "Un fan de Lore qui partage sa passion. Plusieurs séries originales",
     status: "active",
-    tags: ["lore"]
+    tags: ["lore"],
   },
   {
     name: "Stenkova",
     url: "https://www.youtube.com/@StenKovaHistoritor",
-    description: "Parle de l'univers 40k avec le maximum de détails possibles avec des sources fiables.",
+    description:
+      "Parle de l'univers 40k avec le maximum de détails possibles avec des sources fiables.",
     status: "active",
     tags: ["lore"],
   },
@@ -277,21 +305,24 @@ const CHANNELS: Channel[] = [
   {
     name: "Tabularia Vetita (Lore 40k)",
     url: "https://www.youtube.com/@TabulariaVetita",
-    description: "Lore narratif, réinterprète et transforme l'univers par une narration original, une analyse critique et une exploration éducative",
+    description:
+      "Lore narratif, réinterprète et transforme l'univers par une narration original, une analyse critique et une exploration éducative",
     status: "active",
     tags: ["lore"],
   },
   {
     name: "Tiberias Total War 40k",
     url: "https://www.youtube.com/@TiberiasTotalWar40k",
-    description: "Actualité du jeux vidéo Total War Warhammer 40000, du lore 40k et lorsque viendra l’heure, déploiement de campagnes dédiées !",
+    description:
+      "Actualité du jeux vidéo Total War Warhammer 40000, du lore 40k et lorsque viendra l’heure, déploiement de campagnes dédiées !",
     status: "active",
     tags: ["lore", "news", "jeux-video"],
   },
   {
     name: "Vox Narratoris",
     url: "https://www.youtube.com/@VoxNarratoris",
-    description: "Narration immersive originale, chapitré. Créé par un ingénieur du son et compositeur passionné.",
+    description:
+      "Narration immersive originale, chapitré. Créé par un ingénieur du son et compositeur passionné.",
     status: "active",
     tags: ["livre-audio-original"],
   },
@@ -305,7 +336,8 @@ const CHANNELS: Channel[] = [
   {
     name: "la fraise de 40k",
     url: "https://www.youtube.com/@lafraisede40k99",
-    description: "Ancienne chaîne de lore 40k mais aussi d'autres choses totalement random. Chaîne décalée",
+    description:
+      "Ancienne chaîne de lore 40k mais aussi d'autres choses totalement random. Chaîne décalée",
     status: "active",
     tags: ["lore"],
   },
@@ -385,7 +417,8 @@ export default function App() {
           >
             <p className="text-parchment-muted text-lg md:text-xl leading-relaxed border-y border-grim-border py-4">
               Ce document est un répertoire des créateurs de contenu
-              francophones dédiés à l'univers de Warhammer 40,000 (et 30k). <br />
+              francophones dédiés à l'univers de Warhammer 40,000 (et 30k).{" "}
+              <br />
               Une ressource pour tout explorateur du lore.
             </p>
           </motion.div>
@@ -421,8 +454,8 @@ export default function App() {
             filteredChannels.map((channel, index) => {
               const statusConfig = {
                 active: { color: "bg-green-500", label: "Actif" },
-                pause:  { color: "bg-yellow-500", label: "En pause" },
-                dead:   { color: "bg-neutral-600", label: "Inactif" },
+                pause: { color: "bg-yellow-500", label: "En pause" },
+                dead: { color: "bg-neutral-600", label: "Inactif" },
               };
               const s = statusConfig[channel.status];
               return (
@@ -452,7 +485,10 @@ export default function App() {
                     {channel.tags.length > 0 && (
                       <div className="flex flex-wrap gap-1 mt-3">
                         {channel.tags.map((tag) => (
-                          <span key={tag} className="text-xs uppercase tracking-wider px-2 py-0.5 border border-grim-border text-parchment-muted/60 font-sans">
+                          <span
+                            key={tag}
+                            className="text-xs uppercase tracking-wider px-2 py-0.5 border border-grim-border text-parchment-muted/60 font-sans"
+                          >
                             {tag.replace(/-/g, " ")}
                           </span>
                         ))}
@@ -461,7 +497,9 @@ export default function App() {
                   </div>
                   <div className="relative z-10 mt-4 pt-3 border-t border-grim-border/50 flex items-center gap-2">
                     <span className={`w-2 h-2 rounded-full ${s.color}`}></span>
-                    <span className="text-xs uppercase tracking-widest text-parchment-muted/50 font-sans">{s.label}</span>
+                    <span className="text-xs uppercase tracking-widest text-parchment-muted/50 font-sans">
+                      {s.label}
+                    </span>
                   </div>
                 </motion.a>
               );
@@ -477,7 +515,27 @@ export default function App() {
 
         {/* Footer */}
         <footer className="mt-24 text-center border-t border-grim-border pt-8 pb-12">
-          <p className="text-xs uppercase tracking-widest text-parchment-muted/40 font-sans">
+          <p className="text-m text-parchment-muted/40 font-sans">
+            Vous connaissez une chaîne qui manque ? Vous pouvez{" "}
+            <a
+              href="https://github.com/Kalcinator/Archives-du-Lore/issues/new"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="underline underline-offset-2 hover:text-brass transition-colors"
+            >
+              ouvrir une issue GitHub
+            </a>{" "}
+            ou{" "}
+            <a
+              href="https://discord.com/users/380084649868918784"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="underline underline-offset-2 hover:text-brass transition-colors"
+            >
+              m'envoyer un message Discord
+            </a>
+          </p>
+          <p className="text-xl uppercase tracking-widest text-parchment-muted/40 font-sans mt-6">
             L'Empereur Protège • {new Date().getFullYear()}
           </p>
         </footer>
