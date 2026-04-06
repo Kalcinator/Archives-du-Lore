@@ -544,7 +544,8 @@ export default function App() {
             </a>
           </p>
           <p className="text-xl uppercase tracking-widest text-parchment-muted/40 font-sans mt-6">
-            L'Empereur Protège • <ImperialDate />
+            • L'Empereur Protège •<br />
+            <ImperialDate />
           </p>
         </footer>
       </main>
