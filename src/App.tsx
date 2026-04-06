@@ -112,7 +112,7 @@ export default function App() {
           </div>
           <input
             type="text"
-            placeholder="Rechercher"
+            placeholder="Filtrez par nom, tag, ou statut"
             value={searchQuery}
             onChange={(e) => setSearchQuery(e.target.value)}
             className="w-full bg-grim-dark/80 border border-grim-border text-parchment rounded-none py-3 pl-12 pr-4 focus:outline-none focus:border-blood-red focus:ring-1 focus:ring-blood-red transition-colors placeholder:text-parchment-muted/50 font-sans"
