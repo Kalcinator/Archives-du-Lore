@@ -12,7 +12,7 @@ $ProjectRoot = $PSScriptRoot
 
 #region Logic
 try {
-    Write-Host "⚔️  NERO OS : Initialisation du Secteur Lore..." -ForegroundColor Cyan
+    Write-Host "⚔️  NERO OS : Initialisation des Archives du Lore..." -ForegroundColor Cyan
     Set-Location -Path $ProjectRoot
 
     Write-Host "🚀 Lancement du serveur d'archives..." -ForegroundColor Green
