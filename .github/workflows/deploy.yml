@@ -15,12 +15,18 @@ jobs:
       - name: Checkout 🛡️
         uses: actions/checkout@v4
 
-      - name: Install and Build ⚙️
+      - name: Setup Node.js ⚙️
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Install and Build 🛠️
         run: |
           npm install
           npm run build
 
       - name: Deploy to GitHub Pages 🚀
+          # Utilisation de la version stable la plus récente
         uses: JamesIves/github-pages-deploy-action@v4
         with:
           folder: dist
