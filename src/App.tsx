@@ -8,6 +8,7 @@ import { motion } from "motion/react";
 import { Search, Skull, ExternalLink, BookOpen } from "lucide-react";
 import MatrixRain from "./MatrixRain";
 import NoosPulse from "./NoosPulse";
+import ImperialDate from "./ImperialDate";
 
 interface Channel {
   name: string;
@@ -109,6 +110,13 @@ const CHANNELS: Channel[] = [
     description:
       "Narration sur divers Lore : Warhammer 40k, Warhammer Battle, Age of Sigmar, Necromunda, AOS",
     status: "pause",
+    tags: ["lore"],
+  },
+  {
+    name: "Frewind",
+    url: "https://www.youtube.com/@frewind8260",
+    description: "Lore narratif 40k, Age of Sigmar et Old World.",
+    status: "active",
     tags: ["lore"],
   },
   {
@@ -351,12 +359,12 @@ const containerVariants = {
       staggerChildren: 0.05,
     },
   },
-};
+} as const;
 
 const itemVariants = {
   hidden: { opacity: 0, y: 20 },
   visible: { opacity: 1, y: 0, transition: { duration: 0.4, ease: "easeOut" } },
-};
+} as const;
 
 export default function App() {
   const [searchQuery, setSearchQuery] = useState("");
@@ -514,7 +522,7 @@ export default function App() {
         </motion.div>
 
         {/* Footer */}
-        <footer className="mt-24 text-center border-t border-grim-border pt-8 pb-12">
+        <footer className="mt-6 text-center border-t border-grim-border pt-8 pb-12">
           <p className="text-m text-parchment-muted/40 font-sans">
             Vous connaissez une chaîne qui manque ? Vous pouvez{" "}
             <a
@@ -536,7 +544,7 @@ export default function App() {
             </a>
           </p>
           <p className="text-xl uppercase tracking-widest text-parchment-muted/40 font-sans mt-6">
-            L'Empereur Protège • {new Date().getFullYear()}
+            L'Empereur Protège • <ImperialDate />
           </p>
         </footer>
       </main>
