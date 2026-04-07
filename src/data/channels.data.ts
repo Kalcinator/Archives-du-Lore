@@ -20,7 +20,7 @@ export const CHANNELS: Channel[] = [
     name: "Auguste Val",
     url: "https://www.youtube.com/@augusteval",
     description:
-      "Vidéos de fluff sur l'univers de Warhammer 40 000 tous les semaines",
+      "Vidéos de fluff sur l'univers de Warhammer 40 000 toutes les semaines",
     status: "active",
     tags: ["lore"],
   },

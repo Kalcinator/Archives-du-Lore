@@ -4,11 +4,7 @@
  * Architecture : zéro useState — mutation DOM directe via spanRef.
  */
 
-import {
-  useEffect,
-  useRef,
-  type RefObject,
-} from "react";
+import { useEffect, useRef, type RefObject } from "react";
 
 // ---------------------------------------------------------------------------
 // Helpers
@@ -17,22 +13,17 @@ import {
 /** Calcule la date impériale à l'instant T. */
 function getImperialDate(): string {
   const now = new Date();
-  const year = now.getFullYear();
-  const millennium = Math.floor(year / 1000) + 1;
-
-  // Jours écoulés depuis le 1er janvier (1-indexed)
-  const startOfYear = new Date(year, 0, 1);
+  const year = now.getUTCFullYear();
+  const millennium = Math.ceil(year / 1000);
+  const startOfYear = new Date(Date.UTC(year, 0, 1));
   const diffMs = now.getTime() - startOfYear.getTime();
   const dayOfYear = Math.floor(diffMs / (1000 * 60 * 60 * 24)) + 1;
-
-  const currentHour = now.getHours() + now.getMinutes() / 60;
+  const currentHour = now.getUTCHours() + now.getUTCMinutes() / 60;
   const totalHours = (dayOfYear - 1) * 24 + currentHour;
-  const yearFraction = Math.floor(totalHours * 0.11407955)
+  const yearFraction = Math.min(Math.floor(totalHours * 0.11407955), 999)
     .toString()
     .padStart(3, "0");
-
-  const yearSuffix = String(year).slice(-3); // "026"
-
+  const yearSuffix = String(year).slice(-3);
   return `0.${yearFraction}.${yearSuffix}.M${millennium}`;
 }
 
@@ -66,7 +57,9 @@ function scrambleText(
     }
 
     // 2. Accessibilité (A11y)
-    const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    const prefersReducedMotion = window.matchMedia(
+      "(prefers-reduced-motion: reduce)",
+    ).matches;
     if (prefersReducedMotion) {
       spanRef.current.textContent = target;
       resolve();
@@ -98,12 +91,14 @@ function scrambleText(
           // Formule d'érosion bidirectionnelle (Collapse/Expand)
           const centerIndex = (target.length - 1) / 2;
           const distanceToCenter = Math.abs(i - centerIndex);
-          const normalizedDistance = centerIndex === 0 ? 0 : distanceToCenter / centerIndex;
-          const baseThreshold = mode === "collapse" ? 1 - normalizedDistance : normalizedDistance;
+          const normalizedDistance =
+            centerIndex === 0 ? 0 : distanceToCenter / centerIndex;
+          const baseThreshold =
+            mode === "collapse" ? 1 - normalizedDistance : normalizedDistance;
           const charRevealThreshold = baseThreshold * 0.8;
 
-          // GESTION DE LA VISIBILITÉ (Fix Expand) : Propagation d'onde
-          // En mode 'expand', l'onde "pousse" vers l'extérieur. Si le front n'est pas là, on reste invisible.
+          // GESTION DE LA VISIBILITÉ : Propagation d'onde
+          // En mode 'expand', l'onde "pousse" vers l'extérieur. Si le front n'est pas là, il reste invisible.
           if (mode === "expand" && progress < charRevealThreshold - 0.1) {
             return "\u2007";
           }
@@ -112,7 +107,8 @@ function scrambleText(
             return char;
           }
           if (Math.random() > 0.4) {
-            currentChars[i] = CHARSET[Math.floor(Math.random() * CHARSET.length)];
+            currentChars[i] =
+              CHARSET[Math.floor(Math.random() * CHARSET.length)];
           }
           return currentChars[i];
         })
@@ -157,7 +153,13 @@ export default function ImperialDate() {
         const paddedGregorian = `\u2007\u2007\u2007\u2007${year}\u2007\u2007\u2007\u2007`;
 
         // Étape 3 : Scramble vers l'Ancien Calendrier (Érosion vers le centre)
-        await scrambleText(paddedGregorian, spanRef, rafIdRef, 2000, "collapse");
+        await scrambleText(
+          paddedGregorian,
+          spanRef,
+          rafIdRef,
+          2000,
+          "collapse",
+        );
         if (!isActive) break;
 
         // Étape 4 : Suspension sur l'année Grégorienne
