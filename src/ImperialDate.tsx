@@ -190,11 +190,14 @@ export default function ImperialDate() {
       ref={spanRef}
       style={{
         display: "inline-block",
-        minWidth: "12ch",
+        width: "180px", // Verrouillage immuable (Bunker Style)
+        height: "1.2em",
+        lineHeight: "1.2em",
         textAlign: "center",
-        whiteSpace: "pre",
+        whiteSpace: "nowrap",
         verticalAlign: "bottom",
         overflow: "hidden",
+        contain: "paint layout", // Isolation physique du DOM
         fontVariantNumeric: "tabular-nums",
       }}
     />
