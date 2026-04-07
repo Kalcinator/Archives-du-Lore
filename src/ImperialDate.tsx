@@ -8,7 +8,6 @@ import {
   useEffect,
   useRef,
   type RefObject,
-  type MutableRefObject,
 } from "react";
 
 // ---------------------------------------------------------------------------
@@ -41,7 +40,7 @@ function getImperialDate(): string {
 // Glitch engine
 // ---------------------------------------------------------------------------
 
-const CHARSET = "0123456789.MΩ†#";
+const CHARSET = "0123456789.MΩ†#ΑΒΓΔΕΖΗΘΙΚΛΜΝΞΟΠΡΣΤΥΦΧΨΩαβγδεζηθλξπσφψω";
 
 /**
  * Anime le texte cible en "scramblant" les caractères sur une durée fixe (ms),
@@ -54,7 +53,7 @@ const CHARSET = "0123456789.MΩ†#";
 function scrambleText(
   target: string,
   spanRef: RefObject<HTMLSpanElement | null>,
-  rafIdRef: MutableRefObject<number>,
+  rafIdRef: RefObject<number>,
   durationMs: number,
   mode: "collapse" | "expand",
 ): Promise<void> {
@@ -181,23 +180,38 @@ export default function ImperialDate() {
   }, []);
 
   return (
-    <span
-      ref={spanRef}
-      style={{
-        display: "inline-flex",
-        width: "13rem", // Empreinte immuable (Bunker Style)
-        height: "1.5rem",
-        alignItems: "center",
-        justifyContent: "center",
-        flexShrink: 0,
-        textAlign: "center",
-        whiteSpace: "nowrap",
-        overflow: "hidden",
-        contain: "strict", // ISOLATION TOTALE (Size + Layout + Paint)
-        fontVariantNumeric: "tabular-nums",
-      }}
-    >
-      {getImperialDate()}
-    </span>
+    <>
+      <span
+        ref={spanRef}
+        style={{
+          display: "inline-flex",
+          width: "13rem", // Empreinte immuable (Bunker Style)
+          height: "1.5rem",
+          alignItems: "center",
+          justifyContent: "center",
+          flexShrink: 0,
+          textAlign: "center",
+          whiteSpace: "nowrap",
+          overflow: "hidden",
+          contain: "strict", // ISOLATION TOTALE (Size + Layout + Paint)
+          fontVariantNumeric: "tabular-nums",
+        }}
+      >
+        {getImperialDate()}
+      </span>
+      {/* GLYPH WARM-UP (Pre-caching typographique) */}
+      <span
+        aria-hidden="true"
+        style={{
+          position: "absolute",
+          opacity: 0,
+          pointerEvents: "none",
+          userSelect: "none",
+          zIndex: -1,
+        }}
+      >
+        0123456789.MΩ†#\u2007ΑΒΓΔΕΖΗΘΙΚΛΜΝΞΟΠΡΣΤΥΦΧΨΩαβγδεζηθλξπσφψω01
+      </span>
+    </>
   );
 }
