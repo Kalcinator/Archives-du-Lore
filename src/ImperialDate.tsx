@@ -144,11 +144,6 @@ export default function ImperialDate() {
     let isActive = true;
     const delay = (ms: number) => new Promise((res) => setTimeout(res, ms));
 
-    // 1. Affichage initial (immédiat)
-    if (spanRef.current) {
-      spanRef.current.textContent = getImperialDate();
-    }
-
     async function runSequence() {
       // Attente initiale pour laisser les animations d'entrée se stabiliser
       await delay(2000);
@@ -189,17 +184,20 @@ export default function ImperialDate() {
     <span
       ref={spanRef}
       style={{
-        display: "inline-block",
-        width: "180px", // Verrouillage immuable (Bunker Style)
-        height: "1.2em",
-        lineHeight: "1.2em",
+        display: "inline-flex",
+        width: "12rem", // Empreinte immuable (Bunker Style)
+        height: "1.5rem",
+        alignItems: "center",
+        justifyContent: "center",
+        flexShrink: 0,
         textAlign: "center",
         whiteSpace: "nowrap",
-        verticalAlign: "bottom",
         overflow: "hidden",
         contain: "paint layout", // Isolation physique du DOM
         fontVariantNumeric: "tabular-nums",
       }}
-    />
+    >
+      {getImperialDate()}
+    </span>
   );
 }
