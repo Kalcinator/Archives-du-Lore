@@ -10,7 +10,7 @@ export default function MatrixRain() {
 
     const canvas = canvasRef.current!;
     const ctx = canvas.getContext("2d")!;
-    const FONT_SIZE = 14;
+    const FONT_SIZE = 18;
     let cols: number[] = [];
     let animId: number;
 
@@ -51,7 +51,7 @@ export default function MatrixRain() {
     };
 
     let lastTime = 0;
-    const interval = 1000 / 15; // 15 FPS
+    const interval = 1000 / 7; // 15 FPS
 
     const animate = (timestamp: number) => {
       const deltaTime = timestamp - lastTime;
