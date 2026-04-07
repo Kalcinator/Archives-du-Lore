@@ -139,6 +139,14 @@ export const CHANNELS: Channel[] = [
     tags: ["lore"],
   },
   {
+    name: "La Fraise de 40k",
+    url: "https://www.youtube.com/@lafraisede40k99",
+    description:
+      "Ancienne chaîne de lore 40k mais aussi d'autres choses totalement random. Chaîne décalée",
+    status: "active",
+    tags: ["lore"],
+  },
+  {
     name: "Land Rider - Un Podcast Warhammer",
     url: "https://www.youtube.com/@LandRiderPod",
     description:
@@ -312,13 +320,5 @@ export const CHANNELS: Channel[] = [
     description: "Podcast lore et news 40k",
     status: "active",
     tags: ["lore", "figurines", "podcast", "news"],
-  },
-  {
-    name: "la fraise de 40k",
-    url: "https://www.youtube.com/@lafraisede40k99",
-    description:
-      "Ancienne chaîne de lore 40k mais aussi d'autres choses totalement random. Chaîne décalée",
-    status: "active",
-    tags: ["lore"],
   },
 ];
