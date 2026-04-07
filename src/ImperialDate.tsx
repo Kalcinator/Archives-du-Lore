@@ -185,7 +185,7 @@ export default function ImperialDate() {
       ref={spanRef}
       style={{
         display: "inline-flex",
-        width: "12rem", // Empreinte immuable (Bunker Style)
+        width: "13rem", // Empreinte immuable (Bunker Style)
         height: "1.5rem",
         alignItems: "center",
         justifyContent: "center",
@@ -193,7 +193,7 @@ export default function ImperialDate() {
         textAlign: "center",
         whiteSpace: "nowrap",
         overflow: "hidden",
-        contain: "paint layout", // Isolation physique du DOM
+        contain: "strict", // ISOLATION TOTALE (Size + Layout + Paint)
         fontVariantNumeric: "tabular-nums",
       }}
     >

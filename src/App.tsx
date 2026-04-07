@@ -161,10 +161,10 @@ export default function App() {
               m'envoyer un message via Discord
             </a>
           </p>
-          <p className="text-xl uppercase tracking-widest text-parchment-muted/40 font-sans mt-6">
-            • L'Empereur Protège •<br />
+          <div className="text-lg uppercase tracking-widest text-parchment-muted/40 font-sans mt-8 flex flex-col items-center justify-center min-h-[4rem]">
+            <span>• L'Empereur Protège •</span>
             <ImperialDate />
-          </p>
+          </div>
         </footer>
       </main>
     </div>
