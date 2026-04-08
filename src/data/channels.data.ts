@@ -25,6 +25,14 @@ export const CHANNELS: Channel[] = [
     tags: ["lore"],
   },
   {
+    name: "AstropathE VexarE",
+    url: "https://www.youtube.com/@AstropathEVexarE",
+    description:
+      "Peinture, jeu, aspect social autour du hobby! Service de peinture",
+    status: "active",
+    tags: ["figurines", "news", "podcast", "jeux-video"],
+  },
+  {
     name: "Ben le dingue",
     url: "https://www.youtube.com/@Ben_le_dingue",
     description:
@@ -153,6 +161,14 @@ export const CHANNELS: Channel[] = [
       "Le podcast qui vous parle avec amour des univers où il n'y a que la guerre : ceux de Warhammer (et Trench Crusade) ! Lore, figurines, jeu, et l'interaction entre les trois.",
     status: "active",
     tags: ["podcast", "lore", "figurines"],
+  },
+  {
+    name: "L'Atelier de Duncan",
+    url: "https://www.youtube.com/@latelierdeduncan",
+    description:
+      "Peinture sur figurine, la fabrication de décors, conception de table de jeux et tout ce qui touche au monde de la figurine, impression 3D, test de matériel, test de jeux ...",
+    status: "active",
+    tags: ["figurines", "news", "podcast", "jeux-video"],
   },
   {
     name: "Le Librarium",
