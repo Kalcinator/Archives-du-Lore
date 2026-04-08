@@ -51,7 +51,8 @@ export const CHANNELS: Channel[] = [
   {
     name: "BoneSinger",
     url: "https://www.youtube.com/@BoneSinger",
-    description: "Immersion visio/auditive, grimdark ou parodique",
+    description:
+      "Immersion visio/auditive, grimdark ou parodique. Une voix unique",
     status: "active",
     tags: ["lore"],
   },
@@ -73,7 +74,7 @@ export const CHANNELS: Channel[] = [
     name: "Commémorateurs 40K",
     url: "https://www.youtube.com/@Commemorateurs40K",
     description:
-      " Zenk et Ash, commémorateurs impériaux, chargés de préserver la mémoire des événements marquants et tragiques qui ont façonné la galaxie. À travers récits et archives, nous retraçons des rencontres titanesques, des sacrifices héroïques et des sombres trahisons qui ont défini les dix derniers millénaires. ",
+      "Zenk et Ash, commémorateurs impériaux, chargés de préserver la mémoire des événements marquants et tragiques qui ont façonné la galaxie ces dix derniers millénaires. ",
     status: "pause",
     tags: ["lore"],
   },
@@ -219,7 +220,8 @@ export const CHANNELS: Channel[] = [
   {
     name: "Les contes d'Enki",
     url: "https://www.youtube.com/@lescontesdenki",
-    description: "Livres audio originaux chapitrés, absolument génial 🐦‍🔥 !",
+    description:
+      "Livres audio originaux chapitrés fait maison, absolument génial 🐦‍🔥 !",
     status: "active",
     tags: ["livre-audio-original"],
   },
@@ -256,7 +258,7 @@ export const CHANNELS: Channel[] = [
     name: "Nono le nurgling",
     url: "https://www.youtube.com/@Nonolenurgling",
     description:
-      "Un nurgling échappé du Warp, lore et news 40k. Possibilité de contamination humoristique via vidéo ⚠️🤢",
+      "Un nurgling échappé du Warp qui parle du lore et des news 40k. Possibilité de contamination humoristique via vidéo ⚠️🤢",
     status: "active",
     tags: ["lore", "news"],
   },
@@ -264,14 +266,14 @@ export const CHANNELS: Channel[] = [
     name: "Oxawa",
     url: "https://www.youtube.com/@oxawa",
     description:
-      "Lore, narration et immersion; format historique exhaustif, de l'âge d'or de l'humanité à l'âge sombre de l'Imperium",
+      "Lore, narration et immersion; format historique exhaustif original, de l'âge d'or de l'humanité à l'âge sombre de l'Imperium. ",
     status: "active",
     tags: ["lore"],
   },
   {
     name: "PICKEMILE",
     url: "https://www.youtube.com/@Picklemile",
-    description: "Le King du Game, narration musclée",
+    description: "Le King du Game, narration musclée.",
     status: "active",
     tags: ["lore"],
   },
@@ -295,14 +297,15 @@ export const CHANNELS: Channel[] = [
     name: "Stenkova",
     url: "https://www.youtube.com/@StenKovaHistoritor",
     description:
-      "Parle de l'univers 40k avec le maximum de détails possibles avec des sources fiables.",
+      "Parle de l'univers 40k avec le maximum de détails possibles, avec des sources fiables.",
     status: "active",
     tags: ["lore"],
   },
   {
     name: "Storyhammer",
     url: "https://www.youtube.com/@storyhammer679",
-    description: "Chaîne en pause depuis au moins 4 ans",
+    description:
+      "Séries sur plein d'aspect de 40k. Chaîne en pause depuis au moins 4 ans mais bonne qualité",
     status: "pause",
     tags: ["lore"],
   },
@@ -310,7 +313,7 @@ export const CHANNELS: Channel[] = [
     name: "Tabularia Vetita (Lore 40k)",
     url: "https://www.youtube.com/@TabulariaVetita",
     description:
-      "Lore narratif, réinterprète et transforme l'univers par une narration original, une analyse critique et une exploration éducative",
+      "Lore narratif, réinterprète et transforme l'univers par une narration originale, une analyse critique et une exploration éducative",
     status: "active",
     tags: ["lore"],
   },
@@ -326,14 +329,14 @@ export const CHANNELS: Channel[] = [
     name: "Vox Narratoris",
     url: "https://www.youtube.com/@VoxNarratoris",
     description:
-      "Narration immersive originale, chapitré. Créé par un ingénieur du son et compositeur passionné.",
+      "Narration immersive originale, chapitré. Créé par un ingénieur du son et compositeur passionné. Épisodes craftés avec grand soin",
     status: "active",
     tags: ["livre-audio-original"],
   },
   {
     name: "Wargame Lore HiigyTV",
     url: "https://www.youtube.com/@WargameLoreHiigyTV",
-    description: "Podcast lore et news 40k",
+    description: "Podcast lore et news 40k. Chaîne secondaire",
     status: "active",
     tags: ["lore", "figurines", "podcast", "news"],
   },
