@@ -94,6 +94,14 @@ export const CHANNELS: Channel[] = [
     tags: ["lore"],
   },
   {
+    name: "Dans Ton Bolter",
+    url: "https://www.youtube.com/@DansTonBolter",
+    description:
+      "Le Podcast des 2 vieux gars Sam & Got qui parlent de Warhammer 40k",
+    status: "active",
+    tags: ["podcast", "lore"],
+  },
+  {
     name: "Frewind",
     url: "https://www.youtube.com/@frewind8260",
     description: "Lore narratif 40k, Age of Sigmar et Old World.",
