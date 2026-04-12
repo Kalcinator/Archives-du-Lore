@@ -241,6 +241,14 @@ export const CHANNELS: Channel[] = [
     tags: ["lore"],
   },
   {
+    name: "Mat Hobby",
+    url: "https://www.youtube.com/@Mathobby",
+    description:
+      "Chaîne pour les amateurs de figurines vintage, warhammer the old world et 40k, peinture de miniatures, modélisme, décors et lore.",
+    status: "active",
+    tags: ["figurines", "lore", "news"],
+  },
+  {
     name: "Mortis Pariah",
     url: "https://www.youtube.com/@MortisPariah",
     description: "Lore narratif Trench crusade en historiquement 40k",
