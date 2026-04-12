@@ -302,7 +302,7 @@ export const CHANNELS: Channel[] = [
     tags: ["lore", "figurines", "podcast", "news"],
   },
   {
-    name: "Sanko_Lore",
+    name: "Sanko Lore",
     url: "https://www.youtube.com/@Sanko_Lore",
     description:
       "Un fan de Lore qui partage sa passion. Plusieurs séries originales",
@@ -326,7 +326,7 @@ export const CHANNELS: Channel[] = [
     tags: ["lore"],
   },
   {
-    name: "Tabularia Vetita (Lore 40k)",
+    name: "Tabularia Vetita",
     url: "https://www.youtube.com/@TabulariaVetita",
     description:
       "Lore narratif, réinterprète et transforme l'univers par une narration originale, une analyse critique et une exploration éducative",
@@ -334,7 +334,7 @@ export const CHANNELS: Channel[] = [
     tags: ["lore"],
   },
   {
-    name: "Tiberias Total War 40k",
+    name: "Tiberias - Total War 40k",
     url: "https://www.youtube.com/@TiberiasTotalWar40k",
     description:
       "Actualité du jeux vidéo Total War Warhammer 40000, du lore 40k et lorsque viendra l’heure, déploiement de campagnes dédiées !",
@@ -350,7 +350,7 @@ export const CHANNELS: Channel[] = [
     tags: ["livre-audio-original"],
   },
   {
-    name: "Wargame Lore HiigyTV",
+    name: "HiigyTV",
     url: "https://www.youtube.com/@WargameLoreHiigyTV",
     description: "Podcast lore et news 40k. Chaîne secondaire",
     status: "active",
