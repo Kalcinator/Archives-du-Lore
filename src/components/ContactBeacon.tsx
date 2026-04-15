@@ -67,7 +67,7 @@ export default function ContactBeacon() {
         <div className="border-b border-grim-border pb-2 mb-2 flex items-center gap-2 overflow-hidden">
           <Terminal size={14} className="text-brass flex-shrink-0" />
           <span className="text-[12px] uppercase tracking-[0.2em] font-display text-parchment-muted truncate whitespace-nowrap">
-            ++ comm ++
+            TRANSMISSIONS
           </span>
         </div>
 
