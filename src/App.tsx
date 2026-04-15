@@ -10,6 +10,7 @@ import MatrixRain from "./MatrixRain";
 import NoosPulse from "./NoosPulse";
 import ImperialDate from "./ImperialDate";
 import ChannelCard from "./components/ChannelCard";
+import ContactBeacon from "./components/ContactBeacon";
 import { CHANNELS } from "./data/channels.data";
 
 const containerVariants = {
@@ -139,33 +140,14 @@ export default function App() {
         </motion.div>
 
         {/* Footer */}
-        <footer className="mt-6 text-center border-t border-grim-border pt-8 pb-12">
-          <p className="text-m text-parchment-muted/40 font-sans">
-            Vous connaissez une chaîne qui manque ? Vous pouvez{" "}
-            <a
-              href="https://github.com/Kalcinator/Archives-du-Lore/issues/new"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="underline underline-offset-2 hover:text-brass transition-colors"
-            >
-              m'en informer sur GitHub
-            </a>{" "}
-            ou{" "}
-            <a
-              href="https://discord.com/users/380084649868918784"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="underline underline-offset-2 hover:text-brass transition-colors"
-            >
-              m'envoyer un message via Discord
-            </a>
-          </p>
-          <div className="text-lg uppercase tracking-widest text-parchment-muted/40 font-sans mt-8 flex flex-col items-center justify-center min-h-[4rem]">
+        <footer className="mt-6 text-center border-t border-grim-border pt-4 pb-12">
+          <div className="text-lg uppercase tracking-widest text-parchment-muted/40 font-sans mt-0 flex flex-col items-center justify-center min-h-[4rem]">
             <span>• L'Empereur Protège •</span>
             <ImperialDate />
           </div>
         </footer>
       </main>
+      <ContactBeacon />
     </div>
   );
 }

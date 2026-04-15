@@ -22,6 +22,13 @@ export default function ChannelCard({ channel }: ChannelCardProps) {
   return (
     <motion.a
       variants={itemVariants}
+      whileHover={{ 
+        scale: 1.02,
+        y: -4,
+        borderColor: "var(--color-blood-red)",
+        boxShadow: "0 8px 30px rgba(138, 3, 3, 0.2), inset 0 0 0 1px rgba(138, 3, 3, 0.1)"
+      }}
+      whileTap={{ scale: 0.98 }}
       href={channel.url}
       target="_blank"
       rel="noopener noreferrer"

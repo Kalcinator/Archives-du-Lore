@@ -1,0 +1,144 @@
+import { motion } from "motion/react";
+import { Radio, Terminal } from "lucide-react";
+import { useState } from "react";
+
+// Lucide a déprécié les icônes de marques. On utilise des SVG propres et thématiques.
+const GithubIcon = ({ size = 18 }: { size?: number }) => (
+  <svg
+    width={size}
+    height={size}
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    strokeWidth="2"
+    strokeLinecap="round"
+    strokeLinejoin="round"
+  >
+    <path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4" />
+    <path d="M9 18c-4.51 2-5-2-7-2" />
+  </svg>
+);
+
+const DiscordIcon = ({ size = 18 }: { size?: number }) => (
+  <svg
+    width={size}
+    height={size}
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    strokeWidth="2"
+    strokeLinecap="round"
+    strokeLinejoin="round"
+  >
+    <path d="M18 18.72a9.094 9.094 0 0 0 2.16-1.16 1.155 1.155 0 0 0 .44-1.03 15.658 15.658 0 0 0-1.18-4.15 8.3 8.3 0 0 0-1.18-2.14 9.888 9.888 0 0 0-4.73-3.13 4.547 4.547 0 0 0-1.7-.33 4.542 4.542 0 0 0-1.7.33 9.888 9.888 0 0 0-4.73 3.13 8.3 8.3 0 0 0-1.18 2.14 15.658 15.658 0 0 0-1.18 4.15 1.155 1.155 0 0 0 .44 1.03 9.094 9.094 0 0 0 2.16 1.16" />
+    <path d="M9 15a1 1 0 1 0 0-2 1 1 0 0 0 0 2Z" />
+    <path d="M15 15a1 1 0 1 0 0-2 1 1 0 0 0 0 2Z" />
+    <path d="M8.5 8.5c.33-1.33 1.33-2 3.5-2s3.17.67 3.5 2" />
+  </svg>
+);
+
+export default function ContactBeacon() {
+  const [isOpen, setIsOpen] = useState(false);
+
+  return (
+    <div className="fixed bottom-6 right-6 z-50 flex flex-col items-end gap-3">
+      <motion.div
+        variants={{
+          closed: { 
+            opacity: 0, 
+            scale: 0.9, 
+            y: 20, 
+            pointerEvents: "none",
+            transition: { duration: 0.2, ease: "easeIn" }
+          },
+          open: { 
+            opacity: 1, 
+            scale: 1, 
+            y: 0, 
+            pointerEvents: "auto",
+            transition: { duration: 0.2, ease: "easeOut", type: "spring", bounce: 0.25 }
+          }
+        }}
+        initial="closed"
+        animate={isOpen ? "open" : "closed"}
+        style={{ transformOrigin: "bottom right" }}
+        className="absolute bottom-full right-0 mb-4 bg-grim-dark/95 border border-grim-border p-4 shadow-2xl backdrop-blur-md grim-card flex flex-col gap-4 min-w-[200px]"
+      >
+        <div className="border-b border-grim-border pb-2 mb-2 flex items-center gap-2 overflow-hidden">
+          <Terminal size={14} className="text-brass flex-shrink-0" />
+          <span className="text-[12px] uppercase tracking-[0.2em] font-display text-parchment-muted truncate whitespace-nowrap">
+            ++ comm ++
+          </span>
+        </div>
+
+        <a
+          href="https://github.com/Kalcinator/Archives-du-Lore/issues/new"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="group flex items-center gap-3 text-parchment hover:text-brass transition-colors no-underline"
+        >
+          <div className="p-2 bg-grim-black/50 border border-grim-border group-hover:border-brass transition-colors">
+            <GithubIcon size={18} />
+          </div>
+          <div className="flex flex-col">
+            <span className="text-xs font-bold uppercase tracking-wider">Rapport</span>
+            <span className="text-[10px] text-parchment-muted">via GitHub</span>
+          </div>
+        </a>
+
+        <a
+          href="https://discord.com/users/380084649868918784"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="group flex items-center gap-3 text-parchment hover:text-brass transition-colors no-underline"
+        >
+          <div className="p-2 bg-grim-black/50 border border-grim-border group-hover:border-brass transition-colors">
+            <DiscordIcon size={18} />
+          </div>
+          <div className="flex flex-col">
+            <span className="text-xs font-bold uppercase tracking-wider">Direct Vox</span>
+            <span className="text-[10px] text-parchment-muted">via Discord Link</span>
+          </div>
+        </a>
+      </motion.div>
+
+      <motion.button
+        whileHover={{ 
+          scale: 1.05,
+          borderColor: "var(--color-brass)",
+          boxShadow: "0 0 20px rgba(184, 134, 11, 0.2)"
+        }}
+        whileTap={{ scale: 0.95 }}
+        onClick={() => setIsOpen(!isOpen)}
+        className="relative group bg-grim-dark border border-grim-border p-4 shadow-xl grim-card"
+        title="Ouvrir le canal de communication"
+      >
+        <div className="flex items-center gap-3">
+          <div className="relative">
+            <Radio size={24} className="text-brass group-hover:text-parchment transition-colors" />
+            <motion.div
+              animate={{
+                opacity: [0.3, 1, 0.3],
+                scale: [1, 1.2, 1],
+              }}
+              transition={{
+                duration: 2,
+                repeat: Infinity,
+                ease: "easeInOut",
+              }}
+              className="absolute -top-1 -right-1 w-2 h-2 bg-blood-red rounded-full shadow-[0_0_8px_rgba(138,3,3,0.8)]"
+            />
+          </div>
+          <div className="flex flex-col items-start leading-none">
+            <span className="text-[10px] uppercase tracking-[0.2em] font-display text-brass mb-1">
+              Comm-Link
+            </span>
+            <span className="text-[8px] uppercase tracking-widest text-parchment-muted font-sans">
+              Status: Active
+            </span>
+          </div>
+        </div>
+      </motion.button>
+    </div>
+  );
+}
