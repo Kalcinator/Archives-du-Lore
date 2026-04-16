@@ -2,7 +2,7 @@ import { motion } from "motion/react";
 import { Radio, Terminal } from "lucide-react";
 import { useState } from "react";
 
-// Lucide a déprécié les icônes de marques. On utilise des SVG propres et thématiques.
+// SVG propres et thématiques.
 const GithubIcon = ({ size = 18 }: { size?: number }) => (
   <svg
     width={size}
@@ -34,6 +34,22 @@ const DiscordIcon = ({ size = 18 }: { size?: number }) => (
     <path d="M9 15a1 1 0 1 0 0-2 1 1 0 0 0 0 2Z" />
     <path d="M15 15a1 1 0 1 0 0-2 1 1 0 0 0 0 2Z" />
     <path d="M8.5 8.5c.33-1.33 1.33-2 3.5-2s3.17.67 3.5 2" />
+  </svg>
+);
+
+const MailIcon = ({ size = 18 }: { size?: number }) => (
+  <svg
+    width={size}
+    height={size}
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    strokeWidth="2"
+    strokeLinecap="round"
+    strokeLinejoin="round"
+  >
+    <rect width="20" height="16" x="2" y="4" rx="2" />
+    <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
   </svg>
 );
 
@@ -100,6 +116,19 @@ export default function ContactBeacon() {
             <span className="text-[10px] text-parchment-muted">via Discord Link</span>
           </div>
         </a>
+
+        <a
+          href="mailto:ingwe34@gmail.com"
+          className="group flex items-center gap-3 text-parchment hover:text-brass transition-colors no-underline"
+        >
+          <div className="p-2 bg-grim-black/50 border border-grim-border group-hover:border-brass transition-colors">
+            <MailIcon size={18} />
+          </div>
+          <div className="flex flex-col">
+            <span className="text-xs font-bold uppercase tracking-wider">Message</span>
+            <span className="text-[10px] text-parchment-muted"> via Astropathe</span>
+          </div>
+        </a>
       </motion.div>
 
       <motion.button
@@ -129,14 +158,7 @@ export default function ContactBeacon() {
               className="absolute -top-1 -right-1 w-2 h-2 bg-blood-red rounded-full shadow-[0_0_8px_rgba(138,3,3,0.8)]"
             />
           </div>
-          <div className="flex flex-col items-start leading-none">
-            <span className="text-[10px] uppercase tracking-[0.2em] font-display text-brass mb-1">
-              Comm-Link
-            </span>
-            <span className="text-[8px] uppercase tracking-widest text-parchment-muted font-sans">
-              Status: Active
-            </span>
-          </div>
+              
         </div>
       </motion.button>
     </div>
