@@ -90,7 +90,7 @@ export const CHANNELS: Channel[] = [
     url: "https://www.youtube.com/@PapaDjoe",
     description:
       "Narration sur divers Lore : Warhammer 40k, Warhammer Battle, Age of Sigmar, Necromunda, AOS",
-    status: "pause",
+    status: "dead",
     tags: ["lore"],
   },
   {
@@ -127,7 +127,7 @@ export const CHANNELS: Channel[] = [
     name: "Indomitus 40k",
     url: "https://www.youtube.com/@indomitus_40k",
     description:
-      "chaîne destinée à faire découvrir le Lore de Warhammer 40k, lore narratif",
+      "Chaîne destinée à faire découvrir le Lore de Warhammer 40k, du lore narratif de haute voltige",
     status: "active",
     tags: ["lore"],
   },
@@ -144,7 +144,7 @@ export const CHANNELS: Channel[] = [
     url: "https://www.youtube.com/@ApprentiTrouvere-40k",
     description:
       "Apprenti conteur et écrivain en autodidacte, livres audio par chapitre",
-    status: "pause",
+    status: "active",
     tags: ["livre-audio", "livre-audio-original"],
   },
   {
@@ -199,7 +199,7 @@ export const CHANNELS: Channel[] = [
     name: "Le divan du Cryptek",
     url: "https://www.youtube.com/@divancryptek",
     description:
-      "Lore narratif et analyse des personnages et des factions sous le prisme de la psychologie, review des romans.",
+      "Lore narratif et analyse des personnages et des factions sous le prisme de la psychologie, review des romans. Un must !",
     status: "active",
     tags: ["lore"],
   },
@@ -259,7 +259,7 @@ export const CHANNELS: Channel[] = [
     name: "Nimp 30k",
     url: "https://www.youtube.com/@Nimp30k",
     description:
-      "Hérésie d'Horus à travers du Lore ou des Rapports de bataille.",
+      "L'Hérésie d'Horus à travers du Lore ou des Rapports de bataille. Il commence son épopée, à surveiller !",
     status: "active",
     tags: ["lore", "figurines"],
   },
@@ -274,7 +274,7 @@ export const CHANNELS: Channel[] = [
     name: "Nono le nurgling",
     url: "https://www.youtube.com/@Nonolenurgling",
     description:
-      "Un nurgling échappé du Warp qui parle du lore et des news 40k. Possibilité de contamination humoristique via vidéo ⚠️🤢",
+      "Un nurgling échappé du Warp qui parle du lore et des news 40k. Possibilité de contamination humoristique via vidéo ⚠️",
     status: "active",
     tags: ["lore", "news"],
   },
@@ -282,14 +282,14 @@ export const CHANNELS: Channel[] = [
     name: "Oxawa",
     url: "https://www.youtube.com/@oxawa",
     description:
-      "Lore, narration et immersion; format historique exhaustif original, de l'âge d'or de l'humanité à l'âge sombre de l'Imperium. ",
+      "Lore, narration et immersion; format historique exhaustif original, de l'âge d'or de l'humanité à l'âge sombre de l'Imperium. Très bonne qualité !",
     status: "active",
     tags: ["lore"],
   },
   {
     name: "PICKEMILE",
     url: "https://www.youtube.com/@Picklemile",
-    description: "Le King du Game, narration musclée.",
+    description: "Le King du Game, une narration musclée !",
     status: "active",
     tags: ["lore"],
   },
