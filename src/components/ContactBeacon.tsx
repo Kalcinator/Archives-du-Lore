@@ -113,7 +113,7 @@ export default function ContactBeacon() {
           </div>
           <div className="flex flex-col">
             <span className="text-xs font-bold uppercase tracking-wider">Direct Vox</span>
-            <span className="text-[10px] text-parchment-muted">via Discord Link</span>
+            <span className="text-[10px] text-parchment-muted">via Discord</span>
           </div>
         </a>
 
