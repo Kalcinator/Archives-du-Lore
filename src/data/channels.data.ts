@@ -109,6 +109,13 @@ export const CHANNELS: Channel[] = [
     tags: ["lore"],
   },
   {
+    name: "Gaban",
+    url: "https://www.youtube.com/@Gaban_GG",
+    description: "Loremaxxing et autre.",
+    status: "active",
+    tags: ["lore"],
+  },
+  {
     name: "Gautres",
     url: "https://www.youtube.com/@FreezEToxiik",
     description:
@@ -341,6 +348,7 @@ export const CHANNELS: Channel[] = [
     status: "active",
     tags: ["lore", "news", "jeux-video"],
   },
+
   {
     name: "Vox Narratoris",
     url: "https://www.youtube.com/@VoxNarratoris",
