@@ -159,7 +159,7 @@ export const CHANNELS: Channel[] = [
     url: "https://www.youtube.com/@tomwolf92",
     description:
       "Chaque vidéo est pensée comme une pause : un moment pour s’évader, vibrer, frissonner ou simplement s’asseoir et ressentir. Que tu sois fan du Grimdark, joueur passionné ou amateur d’histoires, cette chaîne est ton refuge.",
-    status: "pause",
+    status: "active",
     tags: ["lore"],
   },
   {
