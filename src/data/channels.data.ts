@@ -348,7 +348,14 @@ export const CHANNELS: Channel[] = [
     status: "active",
     tags: ["lore", "news", "jeux-video"],
   },
-
+  {
+    name: "TotoZerand",
+    url: "https://www.youtube.com/@TotoZerand",
+    description:
+      "TotoZerand alias Thomas. Vidéos Lore sur Warhammer 40K et jeux vidéo. Streams Gaming sur Twitch.",
+    status: "active",
+    tags: ["lore", "news", "jeux-video", "figurines"],
+  },
   {
     name: "Vox Narratoris",
     url: "https://www.youtube.com/@VoxNarratoris",
