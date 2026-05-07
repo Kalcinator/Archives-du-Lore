@@ -362,7 +362,15 @@ export const CHANNELS: Channel[] = [
     description:
       "Narration immersive originale, chapitré. Créé par un ingénieur du son et compositeur passionné. Épisodes craftés avec grand soin",
     status: "active",
-    tags: ["livre-audio-original"],
+    tags: ["livre-audio-original", "lore"],
+  },
+  {
+    name: "Vox Silentii",
+    url: "https://www.youtube.com/@VoxSilentii-bh5ok",
+    description:
+      "Les archives oubliées de l’Ordo Vox Silentii, et découvrez ce que certaines des figures les plus marquantes du lore. Toute nouvelle chaîne !",
+    status: "active",
+    tags: ["livre-audio-original", "lore"],
   },
   {
     name: "HiigyTV",
