@@ -33,6 +33,14 @@ export const CHANNELS: Channel[] = [
     tags: ["figurines", "news", "podcast", "jeux-video"],
   },
   {
+    name: "Bashar",
+    url: "www.youtube.com/@Bashar-b7h",
+    description:
+      "Une chaîne pour parler de hobby, de la vie et pour chill. En résumé : Hobby, Fun, Chill",
+    status: "active",
+    tags: ["figurines", "news", "podcast", "lore"],
+  },
+  {
     name: "Ben le dingue",
     url: "https://www.youtube.com/@Ben_le_dingue",
     description:
