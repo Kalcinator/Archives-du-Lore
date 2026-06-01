@@ -126,8 +126,9 @@ export const CHANNELS: Channel[] = [
   {
     name: "Grim Imperium 40k",
     url: "https://www.youtube.com/@grimimperium40k",
-    description: "Livre audio chapitrés, beaucoup de livres",
-    status: "active",
+    description:
+      "-- TOMBÉS AU COMBAT --Livre audio chapitrés, beaucoup de livres",
+    status: "dead",
     tags: ["livre-audio"],
   },
   {
