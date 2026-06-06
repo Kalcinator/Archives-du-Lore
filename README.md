@@ -1,9 +1,10 @@
 # 📜 Archives du Lore
+
 [![Licence: CC0](https://img.shields.io/badge/Licence-CC0%201.0-lightgrey.svg)](https://creativecommons.org/publicdomain/zero/1.0/deed.fr)
 [![Site en ligne](https://img.shields.io/badge/Site-kalcinator.github.io-red)](https://kalcinator.github.io/Archives-du-Lore/)
 [![Statut](https://img.shields.io/badge/Statut-Actif-green)](#)
 
-Les Archives du Lore sont une ressource communautaire pour retrouver facilement les créateurs francophones qui parlent du lore Warhammer 40k 30k (et un peu de TC). Chaînes YouTube, podcasts, livres audio; tout ce que j'ai pu trouver est là !
+Les Archives du Lore sont une ressource communautaire pour retrouver facilement les créateurs francophones qui parlent du lore Warhammer 40k (et aussi 30k, Fantasy, un peu d'AoS et TC). Chaînes YouTube, podcasts, livres audio; tout ce que j'ai pu trouver est là !
 
 Utilisez la barre de recherche pour filtrer par nom, tag ("livre audio", "podcast"), ou statut ("actif", "pause").
 
@@ -11,6 +12,6 @@ Si vous connaissez une chaîne qui manque ? Ouvrez une issue, une pull request o
 
 ---
 
-Ce projet est sous licence **CC0 1.0 Universal** — domaine public, aucune restriction.  
+Ce projet est sous licence **CC0 1.0 Universal** — domaine public, aucune restriction.
 
 L'Empereur Protège.
