@@ -93,8 +93,9 @@ export default function App() {
             className="max-w-2xl mx-auto"
           >
             <p className="text-parchment-muted text-lg md:text-xl leading-relaxed border-y border-grim-border py-4">
-              Répertoire des créateurs de contenu francophones dédiés à l'univers de Warhammer 40,000 (et 30k et un peu de TC).{" "}
-              <br />
+              Répertoire des créateurs de contenu francophones dédiés à
+              l'univers de Warhammer 40,000 (et aussi 30k, Fantasy, un peu d'AoS
+              et TC). <br />
               Une ressource pour tout explorateur du lore.
             </p>
           </motion.div>
