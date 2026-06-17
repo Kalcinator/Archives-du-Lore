@@ -384,11 +384,11 @@ export const CHANNELS: Channel[] = [
   },
   {
     name: "Vox Silentii",
-    url: "https://www.youtube.com/@VoxSilentii-bh5ok",
+    url: "https://www.youtube.com/@VoxSilentii-b",
     description:
-      "-- TOMBÉ AU COMBAT -- Récits narratifs et livres audio originaux ; chaîne supprimée.",
-    status: "dead",
-    tags: ["livre-audio-original", "lore"],
+      "Voice acting dramatique de primarques 40k (Sanguinius, Guilliman, Mortarion, Perturabo, Lorgar) ; textes originaux ou traduits avec accord, sound design soigné. Renaissance de la chaîne supprimée.",
+    status: "active",
+    tags: ["livre-audio-original"],
   },
   {
     name: "HiigyTV",
