@@ -113,6 +113,14 @@ export const CHANNELS: Channel[] = [
     tags: ["podcast", "lore"],
   },
   {
+    name: "French Flair Corner",
+    url: "https://www.youtube.com/@FrenchFlairCorner/videos",
+    description:
+      "Podcast de 2 passionnés un peu barrés. La chaîne où l'on partage le French Savoir Faire à Warhammer 40k",
+    status: "active",
+    tags: ["lore", "podcast", "figurines"],
+  },
+  {
     name: "Frewind",
     url: "https://www.youtube.com/@frewind8260",
     description: "Lore narratif Fantasy Battle et 40k ; chaîne culte.",
@@ -367,6 +375,13 @@ export const CHANNELS: Channel[] = [
     tags: ["lore", "news", "jeux-video"],
   },
   {
+    name: "Thorn",
+    url: "https://www.youtube.com/@ThornLempereur",
+    description: "Lore 40k et news gaming",
+    status: "active",
+    tags: ["lore", "jeux-video"],
+  },
+  {
     name: "TotoZerand",
     url: "https://www.youtube.com/@TotoZerand",
     description:
@@ -405,5 +420,13 @@ export const CHANNELS: Channel[] = [
       "Lore 40k et Age of Sigmar avec analyse personnelle ; chaîne secondaire d'HiigyTV.",
     status: "active",
     tags: ["lore", "news"],
+  },
+  {
+    name: "Warha Dventure",
+    url: "https://www.youtube.com/@warhadventure5241",
+    description:
+      "Super chaîne sur le Wargame, les figurines et le hobby en général.",
+    status: "active",
+    tags: ["figurines", "news", "podcast"],
   },
 ];
