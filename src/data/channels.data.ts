@@ -13,7 +13,7 @@ export const CHANNELS: Channel[] = [
     name: "Alphanime TV",
     url: "https://www.youtube.com/@alphanimetv",
     description:
-      "Romans audio originaux et fan fictions en format chapitré avec incursions parodiques.",
+      "Plusieurs romans audio originaux et fan fictions en format chapitré avec incursions parodiques.",
     status: "active",
     tags: ["livre-audio-original"],
   },
@@ -21,7 +21,7 @@ export const CHANNELS: Channel[] = [
     name: "Auguste Val",
     url: "https://www.youtube.com/@augusteval",
     description:
-      "Vidéos hebdomadaires de fluff; présente les romans Black Library et le lore canonique.",
+      "Vidéos hebdomadaires de fluff; présente les romans Black Library et le lore canonique. Une super référence !",
     status: "active",
     tags: ["lore"],
   },
@@ -61,7 +61,7 @@ export const CHANNELS: Channel[] = [
     name: "BoneSinger",
     url: "https://www.youtube.com/@BoneSinger",
     description:
-      "Immersion visio-auditive dans Warhammer 40k : adaptations de romans Black Library en audiobook chapitré avec sound design.",
+      "Immersion dans 40k : adaptations de romans Black Library en audiobook chapitré avec sound design soigné. Une production de référence !",
     status: "active",
     tags: ["lore", "livre-audio"],
   },
@@ -85,7 +85,7 @@ export const CHANNELS: Channel[] = [
     name: "Commémorateurs 40K",
     url: "https://www.youtube.com/@Commemorateurs40K",
     description:
-      "Zenk et Ash, commémorateurs impériaux à deux voix : récits narratifs sur les batailles et trahisons du 41e millénaire.",
+      "Zenk et Ash, commémorateurs impériaux à deux voix : récits narratifs sur les batailles et trahisons du 41e millénaire. Une référence d'immersion.",
     status: "dead",
     tags: ["lore"],
   },
@@ -131,15 +131,14 @@ export const CHANNELS: Channel[] = [
     name: "Gaban",
     url: "https://www.youtube.com/@Gaban_GG",
     description:
-      "Courts éclairages analytiques sur le lore Warhammer 40k, primarques, chapitres Space Marines et théories.",
+      "Courts éclairages analytiques sur le lore 40k, primarques, chapitres Space Marines et théories.",
     status: "active",
     tags: ["lore"],
   },
   {
     name: "Gautres",
     url: "https://www.youtube.com/@FreezEToxiik",
-    description:
-      "Narration du lore 40k (Death Guard et Thousand Sons à ce jour) via streams ; inactif depuis octobre 2023.",
+    description: "Narration du lore 40k en streams.",
     status: "dead",
     tags: ["lore"],
   },
@@ -170,7 +169,7 @@ export const CHANNELS: Channel[] = [
     name: "L'apprenti Trouvère",
     url: "https://www.youtube.com/@ApprentiTrouvere-40k",
     description:
-      "Livres audio originaux Warhammer 40k écrits et narrés en autodidacte, en format chapitré.",
+      "Livres audio 40k écrits et narrés en autodidacte, en format chapitré. Même si inactif à ce jour, il reste une référence.",
     status: "dead",
     tags: ["livre-audio", "livre-audio-original"],
   },
@@ -178,7 +177,7 @@ export const CHANNELS: Channel[] = [
     name: "La grotte où il pleut",
     url: "https://www.youtube.com/@tomwolf92",
     description:
-      "Récits narratifs de fan fiction originaux d'excellence dans 40k ; chaque vidéo pensée comme une pause immersive dans le Grimdark.",
+      "Récits narratifs de fan fiction originaux d'excellence dans 40k ; chaque vidéo pensée comme une pause immersive dans le Grimdark. La référence pour s'immerger dans un récit",
     status: "active",
     tags: ["lore"],
   },
@@ -210,7 +209,7 @@ export const CHANNELS: Channel[] = [
     name: "Le Librarium",
     url: "https://www.youtube.com/@LeLibrarium",
     description:
-      "Lore narratif 40k en format long ; l'une des références francophones du genre.",
+      "Lore narratif 40k en format long ; l'une des références du genre.",
     status: "active",
     tags: ["lore"],
   },
@@ -218,7 +217,7 @@ export const CHANNELS: Channel[] = [
     name: "Le Primarch Roux",
     url: "https://www.youtube.com/@leprimarchroux",
     description:
-      "Adaptations de romans et suppléments 40k (Imperium Maledictum) en récits narratifs détaillés.",
+      "Adaptations de romans et suppléments 40k (Imperium Maledictum) en récits narratifs détaillés. Une voix de référence.",
     status: "active",
     tags: ["lore"],
   },
@@ -226,7 +225,7 @@ export const CHANNELS: Channel[] = [
     name: "Le divan du Cryptek",
     url: "https://www.youtube.com/@divancryptek",
     description:
-      "Analyse du lore 40k avec un prisme psychologique, reviews de romans Black Library et campagnes narratives Kill Team.",
+      "Analyse du lore 40k avec un prisme psychologique, reviews de romans Black Library et campagnes narratives Kill Team. La référence psycho",
     status: "active",
     tags: ["lore", "figurines"],
   },
@@ -234,7 +233,7 @@ export const CHANNELS: Channel[] = [
     name: "LectioMagna",
     url: "https://www.youtube.com/@LectioMagna",
     description:
-      "Livres audio chapitré de romans Black Library : Hérésie d'Horus et 40k ; actuellement la série 'Valdor' de Chris Wraight.",
+      "Livres audio chapitré de romans Black Library : Hérésie d'Horus et 40k.",
     status: "active",
     tags: ["livre-audio"],
   },
@@ -242,7 +241,7 @@ export const CHANNELS: Channel[] = [
     name: "Legio Relica",
     url: "https://www.youtube.com/@LegioRelica",
     description:
-      "Lore et jeu de plateau Warhammer 30k et 40k en formats courts (10-15 min) ; inactif depuis avril 2025.",
+      "Lore et jeu de plateau 30k et 40k en formats courts (10-15 min).",
     status: "dead",
     tags: ["lore", "figurines"],
   },
@@ -265,8 +264,7 @@ export const CHANNELS: Channel[] = [
   {
     name: "Maître des Archives",
     url: "https://www.youtube.com/@maitredesarchives6919",
-    description:
-      "Lore 40k et SF par l'Archiviste ; format 'Archives' en 2025, inactif depuis mars 2025.",
+    description: "Lore 40k et SF par l'Archiviste.",
     status: "dead",
     tags: ["lore"],
   },
@@ -274,7 +272,7 @@ export const CHANNELS: Channel[] = [
     name: "Mat Hobby",
     url: "https://www.youtube.com/@Mathobby",
     description:
-      "Peinture de figurines Warhammer vintage, The Old World et 40k, modélisme et fabrication de décors en impression 3D.",
+      "Peinture de figurines vintage, The Old World et 40k, modélisme et fabrication de décors en impression 3D.",
     status: "active",
     tags: ["figurines", "lore"],
   },
@@ -282,7 +280,7 @@ export const CHANNELS: Channel[] = [
     name: "Mortis Pariah",
     url: "https://www.youtube.com/@MortisPariah",
     description:
-      "Récits narratifs grimdark 40k et Trench Crusade, adaptations de nouvelles Black Library.",
+      "Récits narratifs 40k et Trench Crusade et adaptations de nouvelles Black Library. La référence TC",
     status: "active",
     tags: ["lore"],
   },
@@ -314,7 +312,7 @@ export const CHANNELS: Channel[] = [
     name: "Oxawa",
     url: "https://www.youtube.com/@oxawa",
     description:
-      "Lore 40k en format historique chapitré (chronologie complète du 1er au 41e millénaire), avec streams de peinture.",
+      "Lore 40k en format historique chapitré (chronologie complète du 1er au 41e millénaire), avec streams de peinture. La référence chronologique",
     status: "active",
     tags: ["lore", "figurines"],
   },
@@ -354,7 +352,7 @@ export const CHANNELS: Channel[] = [
     name: "Stenkova",
     url: "https://www.youtube.com/@StenKovaHistoritor",
     description:
-      "Lore 40k sourcé et détaillé en formats longs ; rigueur documentaire et sources systématiquement citées. Une référence d'exhaustivité francophone.",
+      "Lore 40k sourcé et détaillé en formats longs ; rigueur documentaire et sources systématiquement citées. Une référence d'exhaustivité.",
     status: "active",
     tags: ["lore"],
   },
@@ -362,7 +360,7 @@ export const CHANNELS: Channel[] = [
     name: "Storyhammer",
     url: "https://www.youtube.com/@storyhammer679",
     description:
-      "Lore Warhammer 40k en courts résumés de factions ('C'est quoi') et récits narratifs ; inactif depuis 2021.",
+      "Lore Warhammer 40k en courts résumés de factions ('C'est quoi') et récits narratifs.",
     status: "dead",
     tags: ["lore"],
   },
@@ -370,7 +368,7 @@ export const CHANNELS: Channel[] = [
     name: "Tabularia Vetita",
     url: "https://www.youtube.com/@TabulariaVetita",
     description:
-      "Récits narratifs 40k originaux avec analyse critique du lore ; visuels IA et voix de synthèse déclarés. Un des rare à être passé d'une voix générée a sa propre voix.",
+      "Récits narratifs 40k originaux avec analyse critique du lore ; visuels IA et voix de synthèse déclarés. Un des rare à être passé d'une voix IA a sa propre voix !",
     status: "active",
     tags: ["lore"],
   },
