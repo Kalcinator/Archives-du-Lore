@@ -8,6 +8,8 @@ Les Archives du Lore sont une ressource communautaire pour retrouver facilement 
 
 Utilisez la barre de recherche pour filtrer par nom, tag ("livre audio", "podcast"), ou statut ("actif", "pause").
 
+Statut, selon la date du dernier upload : **actif** si moins de 6 mois, **pause** de 6 à 12 mois, **dead** au-delà de 12 mois ou si la chaîne a été supprimée.
+
 Si vous connaissez une chaîne qui manque ? Ouvrez une issue, une pull request ou un [message sur Discord](https://discord.com/users/380084649868918784) avec l'entrée à ajouter
 
 ---

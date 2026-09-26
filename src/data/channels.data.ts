@@ -46,7 +46,7 @@ export const CHANNELS: Channel[] = [
     url: "https://www.youtube.com/@Ben_le_dingue",
     description:
       "Contenu humoristique 40k et jeux vidéo ; ton décalé et parodique, il fait le choix de l'humour plutôt que du narrativo-dépressif.",
-    status: "active",
+    status: "pause",
     tags: ["lore", "jeux-video"],
   },
   {
@@ -86,7 +86,7 @@ export const CHANNELS: Channel[] = [
     url: "https://www.youtube.com/@Commemorateurs40K",
     description:
       "Zenk et Ash, commémorateurs impériaux à deux voix : récits narratifs sur les batailles et trahisons du 41e millénaire.",
-    status: "pause",
+    status: "dead",
     tags: ["lore"],
   },
   {
@@ -163,7 +163,7 @@ export const CHANNELS: Channel[] = [
     name: "L'Archiviste des Mondes",
     url: "https://www.youtube.com/@larchivistedesmondes",
     description: "Récits narratifs immersifs 40k en fan fiction chapitré.",
-    status: "pause",
+    status: "dead",
     tags: ["lore"],
   },
   {
@@ -171,7 +171,7 @@ export const CHANNELS: Channel[] = [
     url: "https://www.youtube.com/@ApprentiTrouvere-40k",
     description:
       "Livres audio originaux Warhammer 40k écrits et narrés en autodidacte, en format chapitré.",
-    status: "pause",
+    status: "dead",
     tags: ["livre-audio", "livre-audio-original"],
   },
   {
@@ -327,6 +327,14 @@ export const CHANNELS: Channel[] = [
     tags: ["lore"],
   },
   {
+    name: "Raph Raconte",
+    url: "https://www.youtube.com/@Raph_Raconte",
+    description:
+      "Lore hebdomadaire des univers dark fantasy et grimdark : Warhammer, Trench Crusade ; factions, récits de guerre et mystères.",
+    status: "active",
+    tags: ["lore"],
+  },
+  {
     name: "RURAL HAMMER",
     url: "https://www.youtube.com/@RURALHAMMER",
     description:
@@ -368,9 +376,9 @@ export const CHANNELS: Channel[] = [
   },
   {
     name: "Tiberias - Total War 40k",
-    url: "https://www.youtube.com/@TiberiasTotalWar40k",
+    url: "https://www.youtube.com/@TiberiasTotalWar",
     description:
-      "Lore 40k et spéculations sur un futur Total War W40k ; projections de mécaniques de jeu.",
+      "Actualité de Total War: Warhammer 40,000 et lore 40k ; campagnes dédiées prévues à la sortie du jeu.",
     status: "active",
     tags: ["lore", "news", "jeux-video"],
   },
@@ -394,7 +402,7 @@ export const CHANNELS: Channel[] = [
     url: "https://www.youtube.com/@VoxNarratoris",
     description:
       "Fiction originale 40k à plusieurs voix, sound design studio et musiques composées. Future référence.",
-    status: "active",
+    status: "pause",
     tags: ["livre-audio-original", "lore"],
   },
   {
