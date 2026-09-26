@@ -21,7 +21,7 @@ export const CHANNELS: Channel[] = [
     name: "Auguste Val",
     url: "https://www.youtube.com/@augusteval",
     description:
-      "Vidéos hebdomadaires de fluff; présente les romans Black Library et le lore canonique. Une super référence !",
+      "Les grandes guerres et croisades de 40k (Armageddon, Croisade Macharienne, 12e Croisade Noire) racontées à partir des livres de campagne et des codex, sources citées sous chaque vidéo. Une super référence !",
     status: "active",
     tags: ["lore"],
   },
@@ -169,7 +169,7 @@ export const CHANNELS: Channel[] = [
     name: "L'apprenti Trouvère",
     url: "https://www.youtube.com/@ApprentiTrouvere-40k",
     description:
-      "Livres audio 40k écrits et narrés en autodidacte, en format chapitré. Même si inactif à ce jour, il reste une référence.",
+      "Livres audio 40k écrits et narrés en autodidacte, en format chapitré. Il reste une référence.",
     status: "dead",
     tags: ["livre-audio", "livre-audio-original"],
   },
@@ -233,7 +233,7 @@ export const CHANNELS: Channel[] = [
     name: "LectioMagna",
     url: "https://www.youtube.com/@LectioMagna",
     description:
-      "Livres audio chapitré de romans Black Library : Hérésie d'Horus et 40k.",
+      "Livres audio chapitrés de romans Black Library (Hérésie d'Horus, 40k), réalisés en duo avec un soin remarquable. Une production de référence !",
     status: "active",
     tags: ["livre-audio"],
   },
@@ -264,7 +264,8 @@ export const CHANNELS: Channel[] = [
   {
     name: "Maître des Archives",
     url: "https://www.youtube.com/@maitredesarchives6919",
-    description: "Lore 40k et SF par l'Archiviste.",
+    description:
+      "Lore 40k (Grey Knights, retour des primarques) et avis sans détour sur l'actualité de l'univers : projet Amazon, Darktide, choix de Games Workshop.",
     status: "dead",
     tags: ["lore"],
   },
@@ -383,9 +384,10 @@ export const CHANNELS: Channel[] = [
   {
     name: "Thorn",
     url: "https://www.youtube.com/@ThornLempereur",
-    description: "Lore 40k et news gaming",
+    description:
+      "Lore 40k au quotidien : un Short par jour, et des versions longues sur les primarques, les démons et les factions méconnues. Avis sur les annonces Games Workshop en prime.",
     status: "active",
-    tags: ["lore", "jeux-video"],
+    tags: ["lore", "news"],
   },
   {
     name: "TotoZerand",
@@ -407,7 +409,7 @@ export const CHANNELS: Channel[] = [
     name: "Vox Silentii",
     url: "https://www.youtube.com/@VoxSilentii-b",
     description:
-      "Voice acting dramatique de primarques 40k ; textes originaux ou traduits avec accord, sound design soigné.",
+      "Voice acting dramatique de primarques 40k, textes originaux ou traduits avec l'accord des auteurs. La référence en qualité audio : jeu d'acteur et sound design au niveau studio.",
     status: "active",
     tags: ["livre-audio-original"],
   },
