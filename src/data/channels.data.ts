@@ -242,7 +242,7 @@ export const CHANNELS: Channel[] = [
     url: "https://www.youtube.com/@LegioRelica",
     description:
       "Lore et jeu de plateau 30k et 40k en formats courts (10-15 min).",
-    status: "dead",
+    status: "pause",
     tags: ["lore", "figurines"],
   },
   {
