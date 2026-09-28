@@ -334,6 +334,14 @@ export const CHANNELS: Channel[] = [
     tags: ["lore"],
   },
   {
+    name: "Planet Wargame",
+    url: "https://www.youtube.com/@PlanetWargame",
+    description:
+      "Le gentleman wargamer : fluff 40k, jeu narratif, conversions et lives-fleuves sur la grande histoire de GW. Et chaque décembre, son calendrier de l'Avent est une petite merveille.",
+    status: "active",
+    tags: ["lore", "figurines"],
+  },
+  {
     name: "Raph Raconte",
     url: "https://www.youtube.com/@Raph_Raconte",
     description:
