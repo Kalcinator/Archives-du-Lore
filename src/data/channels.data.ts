@@ -151,6 +151,14 @@ export const CHANNELS: Channel[] = [
     tags: ["livre-audio"],
   },
   {
+    name: "Idowaa_",
+    url: "https://www.youtube.com/@idowaa",
+    description:
+      "Peinture Hérésie d'Horus « Légions Brisées », unboxings, news des reveals, et une série sur le lore de Trench Crusade et ses factions.",
+    status: "active",
+    tags: ["figurines", "news", "lore"],
+  },
+  {
     name: "Indomitus 40k",
     url: "https://www.youtube.com/@indomitus_40k",
     description:
