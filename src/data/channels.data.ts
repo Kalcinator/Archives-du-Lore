@@ -13,7 +13,7 @@ export const CHANNELS: Channel[] = [
     name: "AlphaCast",
     url: "https://www.youtube.com/@Alphacast_fr",
     description:
-      "Chaîne de jeu vidéo dont la série « Le Tunnel » raconte le lore de Warhammer 40k et Fantasy : genèse des Salamanders, premiers vampires, C'tan, Slanns. Chercher « Le Tunnel » dans ses vidéos.",
+      "Chaîne de jeu vidéo dont la série « Le Tunnel » raconte le lore de 40k et Fantasy.",
     status: "active",
     tags: ["lore", "jeux-video"],
   },
@@ -321,7 +321,7 @@ export const CHANNELS: Channel[] = [
     name: "MarmotteGW",
     url: "https://www.youtube.com/@MarmotteGW",
     description:
-      "Critiques des romans Black Library (Siege of Terra, Lelith Hesperax, Nécrons) et entretiens avec des joueurs sur leurs factions en v11, par un fan de Games Workshop depuis Epic 40 000.",
+      "Critiques des romans Black Library (Siege of Terra, Lelith Hesperax, Nécrons) et entretiens avec des joueurs v11.",
     status: "active",
     tags: ["lore", "news"],
   },
@@ -417,7 +417,7 @@ export const CHANNELS: Channel[] = [
     name: "Pierre vous la raconte",
     url: "https://www.youtube.com/@pierrevouslaraconte8017",
     description:
-      "Lectures intégrales en français de romans et nouvelles 40k, chapitre par chapitre : La Griffe d'Horus, L'enfant du chaos, Les lignées de sang.",
+      "Lectures intégrales de romans et nouvelles 40k, chapitre par chapitre : La Griffe d'Horus, L'enfant du chaos, Les lignées de sang.",
     status: "dead",
     tags: ["livre-audio"],
   },
