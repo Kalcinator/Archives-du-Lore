@@ -121,6 +121,22 @@ export const CHANNELS: Channel[] = [
     tags: ["podcast", "lore"],
   },
   {
+    name: "Drop Podcast",
+    url: "https://www.youtube.com/@droppodcast",
+    description:
+      "Une bande de potes qui reprend l'Hérésie d'Horus tome par tome dans « Les Chroniques de l'Hérésie » : résumé sans spoil, puis discussion complète. Mauvaise foi et humour lourdingue assumés.",
+    status: "dead",
+    tags: ["podcast", "lore"],
+  },
+  {
+    name: "Elrit - 8 Royaumes",
+    url: "https://www.youtube.com/@elrit-8r",
+    description:
+      "Lore d'Age of Sigmar : cités, cultes et peuples des Royaumes Mortels, avec des passages de romans lus et commentés. La seule référence AoS !",
+    status: "active",
+    tags: ["lore"],
+  },
+  {
     name: "French Flair Corner",
     url: "https://www.youtube.com/@FrenchFlairCorner/videos",
     description:
@@ -175,6 +191,14 @@ export const CHANNELS: Channel[] = [
     tags: ["lore"],
   },
   {
+    name: "Jay Kay Wargame",
+    url: "https://www.youtube.com/@jejeaujaquet",
+    description:
+      "Critiques et résumés des romans de l'Hérésie d'Horus (« Horus Heresylogie »), portraits comme « Lumière sur… l'Empereur », et vlogs de son armée Horus Heresy.",
+    status: "dead",
+    tags: ["lore", "figurines"],
+  },
+  {
     name: "L'Archiviste des Mondes",
     url: "https://www.youtube.com/@larchivistedesmondes",
     description: "Récits narratifs immersifs 40k en fan fiction chapitré.",
@@ -220,6 +244,14 @@ export const CHANNELS: Channel[] = [
       "Peinture de figurines, fabrication de décors, actualités Warhammer et discussions jeu de plateau.",
     status: "active",
     tags: ["figurines", "news", "podcast"],
+  },
+  {
+    name: "Le barde du vieux monde",
+    url: "https://www.youtube.com/@lebardeduvieuxmonde",
+    description:
+      "Lore de Warhammer Fantasy, un personnage ou un peuple par vidéo. Une référence à déguster",
+    status: "active",
+    tags: ["lore"],
   },
   {
     name: "Le Librarium",
@@ -313,7 +345,15 @@ export const CHANNELS: Channel[] = [
     name: "Nimp 30k",
     url: "https://www.youtube.com/@Nimp30k",
     description:
-      "Lore Hérésie d'Horus et rapports de bataille filmés ; chaîne secondaire de Nimp Games.",
+      "Lore Hérésie d'Horus et rapports de bataille filmés ; chaîne secondaire de Nimp Games. Une référence.",
+    status: "active",
+    tags: ["lore", "figurines"],
+  },
+  {
+    name: "Nimp Games",
+    url: "https://www.youtube.com/@nimpgames",
+    description:
+      "La chaîne sœur de Nimp 30k, côté Fantasy : lore de l'Ancien Monde (nains, Settra, héros de Bretonnie), rapports de bataille The Old World et campagne Mordheim. Quelques vidéos en anglais.",
     status: "active",
     tags: ["lore", "figurines"],
   },
@@ -342,12 +382,28 @@ export const CHANNELS: Channel[] = [
     tags: ["lore"],
   },
   {
+    name: "Oldhammer French Hobby",
+    url: "https://www.youtube.com/@oldhammerfrenchhobby",
+    description:
+      "Games Workshop côté rétro : histoire des Tyranides et des Nécrons, portraits d'illustrateurs (Ian Miller, frères Perry), premiers White Dwarf français feuilletés et parties en V4.",
+    status: "active",
+    tags: ["lore", "figurines"],
+  },
+  {
     name: "Oxawa",
     url: "https://www.youtube.com/@oxawa",
     description:
       "Lore 40k en format historique chapitré (chronologie complète du 1er au 41e millénaire), avec streams de peinture. La référence chronologique",
     status: "active",
     tags: ["lore", "figurines"],
+  },
+  {
+    name: "Par ma barbe !",
+    url: "https://www.youtube.com/@parmabarbe",
+    description:
+      "Le lore de Battle raconté aux néophytes, un héros ou un peuple par vidéo, plus des présentations des DLC de TWW 3.",
+    status: "dead",
+    tags: ["lore", "jeux-video"],
   },
   {
     name: "PICKEMILE",
@@ -444,6 +500,14 @@ export const CHANNELS: Channel[] = [
       "Lore Fantasy et 40k combiné au gaming (Dawn of War) ; ton accessible et humoristique.",
     status: "active",
     tags: ["lore", "jeux-video"],
+  },
+  {
+    name: "Trolls de Dame",
+    url: "https://www.youtube.com/@trollsdedame",
+    description:
+      "Chaîne de JDR et figurines dont la série Trench Crusade, portée par une présentatrice, détaille l'univers faction par faction.",
+    status: "active",
+    tags: ["lore"],
   },
   {
     name: "Vox Narratoris",
