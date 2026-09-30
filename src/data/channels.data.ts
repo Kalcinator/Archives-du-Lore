@@ -318,6 +318,14 @@ export const CHANNELS: Channel[] = [
     tags: ["lore", "news", "podcast"],
   },
   {
+    name: "Odyssée - Fantasy",
+    url: "https://www.youtube.com/@odyssee-jeuderole",
+    description:
+      "Maître du jeu venu du jeu de rôle Warhammer Fantasy, il lit et raconte des épisodes du lore de l'Ancien Monde (Middenland, Gotrek, hommes-lézards, Kroak) dans la série « Warhammer Chroniques », avec quelques détours par Naruto et la pop culture.",
+    status: "pause",
+    tags: ["lore"],
+  },
+  {
     name: "Oxawa",
     url: "https://www.youtube.com/@oxawa",
     description:
