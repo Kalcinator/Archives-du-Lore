@@ -230,6 +230,14 @@ export const CHANNELS: Channel[] = [
     tags: ["lore"],
   },
   {
+    name: "La Méthode Raf",
+    url: "https://www.youtube.com/@LaMethodeRaf",
+    description:
+      "Tutos de peinture rapides pour des armées prêtes à jouer (Nécrons Sautekh, or, conversions), série Warhammer 40k × Miyazaki et « Rafterview Challenge », interviews de créateurs du hobby.",
+    status: "active",
+    tags: ["figurines"],
+  },
+  {
     name: "Land Rider - Un Podcast Warhammer",
     url: "https://www.youtube.com/@LandRiderPod",
     description:
