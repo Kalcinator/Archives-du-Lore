@@ -117,7 +117,7 @@ export const CHANNELS: Channel[] = [
     name: "DaKatarn Warhammer",
     url: "https://www.youtube.com/@DaKatarnWarhammer",
     description:
-      "Portraits des grandes figures de Warhammer Fantasy en récits longs et sombres, des comtes vampires de Sylvanie aux machinations de Nagash. Narration habitée sur fond de musiques gothiques, sources citées.",
+      "Portraits des grandes figures de Warhammer Fantasy en récits longs et sombres. Narration habitée sur fond de musiques gothiques. Une référence à venir !",
     status: "active",
     tags: ["lore"],
   },
