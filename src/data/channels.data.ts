@@ -117,7 +117,7 @@ export const CHANNELS: Channel[] = [
     name: "DaKatarn Warhammer",
     url: "https://www.youtube.com/@DaKatarnWarhammer",
     description:
-      "Portraits narratifs de près de deux heures sur les légendes du Vieux Monde, à commencer par Vlad et Isabella von Carstein ; sources citées, illustrations en partie générées par IA. Chaîne lancée en septembre 2026.",
+      "Portraits des grandes figures de Warhammer Fantasy en récits longs et sombres, des comtes vampires de Sylvanie aux machinations de Nagash. Narration habitée sur fond de musiques gothiques, sources citées.",
     status: "active",
     tags: ["lore"],
   },
