@@ -114,6 +114,14 @@ export const CHANNELS: Channel[] = [
     tags: ["lore", "figurines"],
   },
   {
+    name: "DaKatarn Warhammer",
+    url: "https://www.youtube.com/@DaKatarnWarhammer",
+    description:
+      "Portraits narratifs de près de deux heures sur les légendes du Vieux Monde, à commencer par Vlad et Isabella von Carstein ; sources citées, illustrations en partie générées par IA. Chaîne lancée en septembre 2026.",
+    status: "active",
+    tags: ["lore"],
+  },
+  {
     name: "Dans Ton Bolter",
     url: "https://www.youtube.com/@DansTonBolter",
     description: "Podcast de Sam et Got autour du lore 40k. Deux spécialistes.",
